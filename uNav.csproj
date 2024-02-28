@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D102DD57-E08A-4A06-ACE0-97BA9102A097}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>uNav</RootNamespace>
+    <AssemblyName>uNav</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UCNLDrivers">
+      <HintPath>..\..\UCNLLibs\UCNLDrivers\UCNLDrivers\bin\Release\UCNLDrivers.dll</HintPath>
+    </Reference>
+    <Reference Include="UCNLKML">
+      <HintPath>..\..\UCNLLibs\UCNLKML\UCNLKML\bin\Release\UCNLKML.dll</HintPath>
+    </Reference>
+    <Reference Include="UCNLNav">
+      <HintPath>..\..\UCNLLibs\UCNLNav\UCNLNav\bin\Release\UCNLNav.dll</HintPath>
+    </Reference>
+    <Reference Include="UCNLNMEA">
+      <HintPath>..\..\UCNLLibs\UCNLNMEA\UCNLNMEA\bin\Release\UCNLNMEA.dll</HintPath>
+    </Reference>
+    <Reference Include="UCNLPhysics">
+      <HintPath>..\..\UCNLLibs\UCNLPhysics\UCNLPhysics\bin\Release\UCNLPhysics.dll</HintPath>
+    </Reference>
+    <Reference Include="UCNLSalinity">
+      <HintPath>..\..\UCNLLibs\UCNLSalinity\UCNLSalinity\bin\Release\UCNLSalinity.dll</HintPath>
+    </Reference>
+    <Reference Include="UCNLUI">
+      <HintPath>..\..\UCNLLibs\UCNLUI\UCNLUI\bin\Release\UCNLUI.dll</HintPath>
+    </Reference>
+    <Reference Include="uOSM">
+      <HintPath>..\..\UCNLLibs\uOSM\uOSM\bin\Release\uOSM.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\NumDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\NumDialog.Designer.cs" />
+    <Compile Include="Controls\SelectLocationDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\SelectLocationDialog.Designer.cs" />
+    <Compile Include="Controls\SettingsEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\SettingsEditor.Designer.cs">
+      <DependentUpon>SettingsEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TextViewDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\TextViewDialog.Designer.cs">
+      <DependentUpon>TextViewDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sContainer.cs" />
+    <Compile Include="uNavCore\StatHelper.cs" />
+    <Compile Include="uNavCore\uNav.cs" />
+    <Compile Include="uNavCore\uNavBase.cs" />
+    <Compile Include="uNavCore\uNavPort.cs" />
+    <Compile Include="usContainer.cs" />
+    <Compile Include="uNavUtils.cs" />
+    <EmbeddedResource Include="Controls\NumDialog.resx" />
+    <EmbeddedResource Include="Controls\SelectLocationDialog.resx" />
+    <EmbeddedResource Include="Controls\SettingsEditor.resx">
+      <DependentUpon>SettingsEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TextViewDialog.resx">
+      <DependentUpon>TextViewDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
