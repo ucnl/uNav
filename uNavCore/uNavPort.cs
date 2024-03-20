@@ -1,14 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics.Eventing.Reader;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
 using UCNLDrivers;
-using UCNLNav.VLBL;
 using UCNLNMEA;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace uNav.uNavCore
 {
@@ -305,6 +297,28 @@ namespace uNav.uNavCore
         public RemoteECodeReceivedEventArgs(ECodes_Enum eCode)
         {
             ECode = eCode;
+        }
+
+        #endregion
+    }
+
+    public class BaseDataReceivedEventArgs : EventArgs
+    {
+        #region Properties
+
+        public int BaseID { get; private set; }
+        public double BatV { get; private set; }
+
+        public bool IsBatV { get => !double.IsNaN(BatV); }
+
+        #endregion
+
+        #region Constructor
+
+        public BaseDataReceivedEventArgs(int baseID, double batV)
+        {
+            BaseID = baseID;
+            BatV = batV;
         }
 
         #endregion
@@ -781,6 +795,7 @@ namespace uNav.uNavCore
             double bDpt = double.NaN;
             double bBat = double.NaN;
             double bTOA = double.NaN;
+            double bMSR = double.NaN;
             bool isOk = false;
 
             try
@@ -790,7 +805,8 @@ namespace uNav.uNavCore
                 bLon = uNav.O2D(parameters[2]);
                 bDpt = uNav.O2D(parameters[3]);
                 bBat = uNav.O2D(parameters[4]);
-                bTOA = uNav.O2D(parameters[5]);
+                bTOA = uNav.O2D(parameters[6]);
+                bMSR = uNav.O2D(parameters[7]);
                 isOk = (baseID >= 0) && (!double.IsNaN(bLat)) && (!double.IsNaN(bLon)) && (!double.IsNaN(bDpt));
             }
             catch (Exception ex)
@@ -799,7 +815,11 @@ namespace uNav.uNavCore
             }
 
             if (isOk)
+            {
+
+                BaseDataReceived.Rise(this, new BaseDataReceivedEventArgs(baseID, bBat));
                 TrackPointReceived.Rise(this, new TrackPointEventArgs(uNav.BaseID2Str(baseID), bLat, bLon, bDpt, DateTime.Now));
+            }
         }
 
         private void Parse_GGA(object[] parameters)
@@ -1079,6 +1099,7 @@ namespace uNav.uNavCore
 
         public EventHandler<RemoteValueReceivedEventArgs> RemoteValueReceived;
         public EventHandler<RemoteECodeReceivedEventArgs> RemoteECodeReceived;
+        public EventHandler<BaseDataReceivedEventArgs> BaseDataReceived;
 
         public EventHandler DeviceInfoValidChanged;
 

@@ -1,18 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
 using System.Net;
-using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 using UCNLDrivers;
 using UCNLNav;
 using UCNLNMEA;
-using static System.Windows.Forms.AxHost;
 
 namespace uNav.uNavCore
-{   
+{
     public class uNavBase
     {
         #region Properties
@@ -131,7 +127,7 @@ namespace uNav.uNavCore
 
             for (int bID = 0; bID < 4;  bID++)
             {
-                bBats.Add(bID, new AgingValue<double>(30, 60, x => x < 0 ? string.Empty : string.Format("{0} ⚡ {1}", uNav.BaseID2Str(bID), x.ToString())));
+                bBats.Add(bID, new AgingValue<double>(30, 60, uNav.v1dec_fmtr));
                 bLocs.Add(bID, new AgingValue<GeoPoint3D>(3, 60, x => x.ToString()));
             }
 
@@ -214,6 +210,8 @@ namespace uNav.uNavCore
 
                     if (e.IsCourse)
                         TCrs.Value = e.Course_deg;
+
+                    NavigationDataUpdated.Rise(this, EventArgs.Empty);
                 }                
 
                 TrackPointReceived.Rise(this, e);
@@ -283,6 +281,14 @@ namespace uNav.uNavCore
                     rbat.Value = e.Value;
             };
 
+            uPort.BaseDataReceived += (o, e) =>
+            {
+                if (e.IsBatV && bBats.ContainsKey(e.BaseID))
+                {
+                    bBats[e.BaseID].Value = e.BatV;
+                }
+            };
+
             #endregion
         }
 
@@ -337,6 +343,9 @@ namespace uNav.uNavCore
                     TCrs.ToString());
             }
 
+            if (TDpt.IsInitialized)
+                sb.AppendFormat(" DPT: {0}\r\n", TDpt.ToString());
+
             if (lastECode.IsInitialized)
                 sb.AppendFormat("LEC: {0}\r\n", lastECode.ToString());
 
@@ -369,9 +378,7 @@ namespace uNav.uNavCore
                 {
                     if (item.Value.IsInitialized)
                     {
-                        var st = item.Value.ToString();
-                        if (!string.IsNullOrEmpty(st))
-                            sb.AppendLine(st);
+                        sb.AppendFormat("{0}: {1}\r\n", uNav.BaseID2Str(item.Key), item.Value.ToString());
                     }
                 }
 
