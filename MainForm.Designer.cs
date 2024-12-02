@@ -147,7 +147,7 @@
             this.uPlot.ScaleLineTextColor = System.Drawing.Color.Black;
             this.uPlot.ScaleLineWidth = 2F;
             this.uPlot.ScaleTickSize = 10F;
-            this.uPlot.ShowZoomLevel = false;
+            this.uPlot.ShowZoomLevel = true;
             this.uPlot.TileBorderColor = System.Drawing.Color.Gray;
             this.uPlot.TileBorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
             this.uPlot.TileBordersVisible = true;

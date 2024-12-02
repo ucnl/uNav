@@ -145,7 +145,7 @@
     <value>uPlot</value>
   </data>
   <data name="&gt;&gt;uPlot.Type" xml:space="preserve">
-    <value>UCNLUI.Controls.uPlot.uGeoPlot, UCNLUI, Version=1.0.8761.19585, Culture=neutral, PublicKeyToken=null</value>
+    <value>UCNLUI.Controls.uPlot.uGeoPlot, UCNLUI, Version=1.0.8844.23134, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;uPlot.Parent" xml:space="preserve">
     <value>$this</value>
@@ -718,13 +718,13 @@
     <value>6, 35</value>
   </data>
   <data name="statStartStopBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 32</value>
+    <value>176, 32</value>
   </data>
   <data name="statStartStopBtn.Text" xml:space="preserve">
     <value>⏺ Start</value>
   </data>
   <data name="statResetBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 32</value>
+    <value>176, 32</value>
   </data>
   <data name="statResetBtn.Text" xml:space="preserve">
     <value>⏪ Reset</value>
