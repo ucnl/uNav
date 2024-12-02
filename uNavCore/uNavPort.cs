@@ -373,7 +373,7 @@ namespace uNav.uNavCore
             {
                 NMEAParser.AddManufacturerToProprietarySentencesBase(ManufacturerCodes.APL);
                 // $PAPLA,[bID],[bLat_deg],[bLon_deg],[bDpt_m],[bBat],[pTOA_s]
-                NMEAParser.AddProprietarySentenceDescription(ManufacturerCodes.APL, "A", "x,x.x,x.x,x.x,x,x.x");
+                NMEAParser.AddProprietarySentenceDescription(ManufacturerCodes.APL, "A", "x,x.x,x.x,x.x,x.x,x.x");
 
                 NMEAParser.AddManufacturerToProprietarySentencesBase(ManufacturerCodes.RWL);
                 // $PRWLA,[bID],[bLat_deg],[bLon_deg],[bDpt_m],[bBat],[pData],[pTOA_s],[bMSR_dB]
@@ -781,9 +781,13 @@ namespace uNav.uNavCore
             {
                 LogEventHandler.Rise(this, new LogEventArgs(LogLineType.ERROR, ex));
             }
-
+            
             if (isOk)
+            {
+
+                BaseDataReceived.Rise(this, new BaseDataReceivedEventArgs(baseID, bBat));
                 TrackPointReceived.Rise(this, new TrackPointEventArgs(uNav.BaseID2Str(baseID), bLat, bLon, bDpt, DateTime.Now));
+            }
         }
         
         private void Parse_RWLA(object[] parameters)
@@ -863,7 +867,7 @@ namespace uNav.uNavCore
                 tln = lon;
                 tdpt = -alt;
                 trer = hdop;
-                is_tloc = true;                
+                is_tloc = true;
             }
         }
 
