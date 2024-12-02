@@ -6,11 +6,16 @@ using System.Runtime.InteropServices;
 // набора атрибутов. Измените значения этих атрибутов для изменения сведений,
 // связанных со сборкой.
 [assembly: AssemblyTitle("uNav")]
-[assembly: AssemblyDescription("Host application for WAYU & RWLT underawater acoustic navigation systems\n\n")]
+[assembly: AssemblyDescription("Host application for WAYU & RWLT underawater acoustic navigation systems\n\n" +
+                               "User's manual for this aplication,\n\n" + 
+                               "In Russian:\n" +
+                               "https://docs.unavlab.com/documentation/RU/RWLT/uNav_application_Users_manual_ru.html\n\n" +
+                               "In English:\n" +
+                               "https://docs.unavlab.com/documentation/EN/RWLT/uNav_application_Users_manual_en.html")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Underwater communication & navigation laboratory, LLC")]
 [assembly: AssemblyProduct("uNav")]
-[assembly: AssemblyCopyright("Copyright © Underwater communication & navigation laboratory, LLC 2020-2023")]
+[assembly: AssemblyCopyright("Copyright © Underwater communication & navigation laboratory, LLC 2020-2024")]
 [assembly: AssemblyTrademark("UC&NL")]
 [assembly: AssemblyCulture("")]
 
