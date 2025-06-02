@@ -10,6 +10,9 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using UCNLDrivers;
+using UCNLKML;
+using UCNLNav;
+using UCNLNav.TrackFilters;
 using UCNLUI;
 using UCNLUI.Dialogs;
 using uNav.Controls;
@@ -239,7 +242,7 @@ namespace uNav
 
         bool needSettingsUpdate = false;
 
-        #endregion
+        #endregion       
 
         #region Constuctor
 
@@ -563,10 +566,12 @@ namespace uNav
                 tManager.AddPoint(e.TrackID, e.Latitude_deg, e.Longitude_deg, e.Depth_m, DateTime.Now);
                 InvokeAddPoint(e);
 
-                if (e.TrackID == uNavCore.uNav.TargetTrackID)
+                if ((e.TrackID == uNavCore.uNav.TargetTrackID) || (e.TrackID == uNavCore.uNav.AUXGNSSTrackID))
                 {
-                    InvokeCheckAutocenterCenterPlot(e.Latitude_deg, e.Longitude_deg);
                     wpManager.UpdateLocation(e.Latitude_deg, e.Longitude_deg);
+
+                    if (e.TrackID == uNavCore.uNav.TargetTrackID)
+                        InvokeCheckAutocenterCenterPlot(e.Latitude_deg, e.Longitude_deg);
                 }
             };
             uBase.IsWaitingLocalChangedEventHandler += (o, e) =>
@@ -594,7 +599,7 @@ namespace uNav
             uTimer.Mode = Mode.Periodic;
             uTimer.Tick += (o, e) => InvokeSaveAutoscreenshot();
 
-            #endregion
+            #endregion           
         }
 
 
@@ -872,6 +877,298 @@ namespace uNav
                 MessageBoxIcon.Question) == DialogResult.Yes)
                 tManager.Clear();
         }
+
+        #region Track utils
+
+        private void utilsTrackUtilsSmoothMAVBtn_Click(object sender, EventArgs e)
+        {
+            using (NumDialog nDialog = new NumDialog())
+            {
+                nDialog.Text = "Moving average smoothing...";
+                nDialog.ValueCaption = "Window size";
+                nDialog.MaxValue = 64;
+                nDialog.MinValue = 2;
+                nDialog.Value = 4;
+                nDialog.DecimalPlaces = 0;
+
+                if (nDialog.ShowDialog() == DialogResult.OK)
+                {
+                    using (OpenFileDialog oDialog = new OpenFileDialog())
+                    {
+                        oDialog.Title = "Select a tracks to filter...";
+                        oDialog.Multiselect = false;
+                        oDialog.Filter = "KML-files|*.kml";
+
+                        if (oDialog.ShowDialog() == DialogResult.OK)
+                        {
+                            bool isLoaded = false;
+                            KMLData kmlData = null;
+                            try
+                            {
+                                kmlData = TinyKML.Read(oDialog.FileName);
+                                isLoaded = true;
+                            }
+                            catch (Exception ex)
+                            {
+                                ProcessException(ex, true);
+                            }
+
+                            if (isLoaded)
+                            {
+
+                                TrackMovingAverageSmoother tFilter = new TrackMovingAverageSmoother(Convert.ToInt32(nDialog.Value), 50);
+
+                                for (int i = 0; i < kmlData.Count; i++)
+                                {
+                                    if (kmlData[i].PlacemarkItem.Count > 1)
+                                    {
+                                        tFilter.Reset();
+                                        for (int j = 0; j < kmlData[i].PlacemarkItem.Count; j++)
+                                        {
+                                            double lat_rad = Algorithms.Deg2Rad(kmlData[i].PlacemarkItem[j].Latitude);
+                                            double lon_rad = Algorithms.Deg2Rad(kmlData[i].PlacemarkItem[j].Longitude);
+                                            double dpt = kmlData[i].PlacemarkItem[j].Altitude;
+
+                                            tFilter.Process(lat_rad, lon_rad, dpt, DateTime.Now, out lat_rad, out lon_rad, out _, out _);
+
+                                            kmlData[i].PlacemarkItem[j].Latitude = Algorithms.Rad2Deg(lat_rad);
+                                            kmlData[i].PlacemarkItem[j].Longitude = Algorithms.Rad2Deg(lon_rad);
+                                        }
+                                    }
+                                }
+
+                                using (SaveFileDialog sDialog = new SaveFileDialog())
+                                {
+                                    sDialog.Title = "Select filename to save filtered track...";
+                                    sDialog.DefaultExt = "kml";
+                                    sDialog.Filter = "KML files (*.kml)|*.kml";
+
+                                    var fName = string.Format("FLT_{0}", Path.GetFileName(oDialog.FileName));
+                                    var fPath = Path.GetDirectoryName(oDialog.FileName);
+
+                                    sDialog.FileName = Path.Combine(fPath, fName);
+
+                                    if (sDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                                    {
+                                        bool isSaved = false;
+                                        try
+                                        {
+                                            TinyKML.Write(kmlData, sDialog.FileName);
+                                            isSaved = true;
+                                        }
+                                        catch (Exception ex)
+                                        {
+                                            ProcessException(ex, true);
+                                        }
+
+                                        if (isSaved)
+                                            MessageBox.Show("Tracks successfully saved.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        private void utilsTrackUtilsMedianBtn_Click(object sender, EventArgs e)
+        {
+            using (NumDialog nDialog = new NumDialog())
+            {
+                nDialog.Text = "Median smoothing...";
+                nDialog.ValueCaption = "Window size";
+                nDialog.MaxValue = 21;
+                nDialog.MinValue = 3;
+                nDialog.Value = 5;
+                nDialog.DecimalPlaces = 0;
+
+                if (nDialog.ShowDialog() == DialogResult.OK)
+                {
+                    int wsize = Convert.ToInt32(nDialog.Value);
+                    if (wsize % 2 == 0) wsize++;
+
+
+                    using (OpenFileDialog oDialog = new OpenFileDialog())
+                    {
+                        oDialog.Title = "Select a tracks to filter...";
+                        oDialog.Multiselect = false;
+                        oDialog.Filter = "KML-files|*.kml";
+
+                        if (oDialog.ShowDialog() == DialogResult.OK)
+                        {
+                            bool isLoaded = false;
+                            KMLData kmlData = null;
+                            try
+                            {
+                                kmlData = TinyKML.Read(oDialog.FileName);
+                                isLoaded = true;
+                            }
+                            catch (Exception ex)
+                            {
+                                ProcessException(ex, true);
+                            }
+
+                            if (isLoaded)
+                            {
+
+                                TrackMedianFilter medianFilter = new TrackMedianFilter(wsize);
+
+                                for (int i = 0; i < kmlData.Count; i++)
+                                {
+                                    if (kmlData[i].PlacemarkItem.Count > 1)
+                                    {
+                                        medianFilter.Reset();
+                                        for (int j = 0; j < kmlData[i].PlacemarkItem.Count; j++)
+                                        {
+                                            double lat_rad = Algorithms.Deg2Rad(kmlData[i].PlacemarkItem[j].Latitude);
+                                            double lon_rad = Algorithms.Deg2Rad(kmlData[i].PlacemarkItem[j].Longitude);
+                                            double dpt = kmlData[i].PlacemarkItem[j].Altitude;
+
+                                            medianFilter.Process(lat_rad, lon_rad, dpt, DateTime.Now, out lat_rad, out lon_rad, out _, out _);
+
+                                            kmlData[i].PlacemarkItem[j].Latitude = Algorithms.Rad2Deg(lat_rad);
+                                            kmlData[i].PlacemarkItem[j].Longitude = Algorithms.Rad2Deg(lon_rad);
+                                        }
+                                    }
+                                }
+
+                                using (SaveFileDialog sDialog = new SaveFileDialog())
+                                {
+                                    sDialog.Title = "Select filename to save filtered track...";
+                                    sDialog.DefaultExt = "kml";
+                                    sDialog.Filter = "KML files (*.kml)|*.kml";
+
+                                    var fName = string.Format("FLT_{0}", Path.GetFileName(oDialog.FileName));
+                                    var fPath = Path.GetDirectoryName(oDialog.FileName);
+
+                                    sDialog.FileName = Path.Combine(fPath, fName);
+
+                                    if (sDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                                    {
+                                        bool isSaved = false;
+                                        try
+                                        {
+                                            TinyKML.Write(kmlData, sDialog.FileName);
+                                            isSaved = true;
+                                        }
+                                        catch (Exception ex)
+                                        {
+                                            ProcessException(ex, true);
+                                        }
+
+                                        if (isSaved)
+                                            MessageBox.Show("Tracks successfully saved.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        private void utilsTrackUtilsShiftByXYBtn_Click(object sender, EventArgs e)
+        {
+            using (Num2Dialog nDialog = new Num2Dialog())
+            {
+                nDialog.Text = "Track offset...";
+                nDialog.Value1Caption = "X offset (Longitude), m";
+                nDialog.Value1MaxValue = 999;
+                nDialog.Value1MinValue = -999;
+                nDialog.Value1 = 0;
+                nDialog.Value1DecimalPlaces = 1;
+
+                nDialog.Value2Caption = "Y offset (Latitude), m";
+                nDialog.Value2MaxValue = 999;
+                nDialog.Value2MinValue = -999;
+                nDialog.Value2 = 0;
+                nDialog.Value2DecimalPlaces = 1;
+
+                if (nDialog.ShowDialog() == DialogResult.OK)
+                {
+                    using (OpenFileDialog oDialog = new OpenFileDialog())
+                    {
+                        oDialog.Title = "Select a tracks to filter...";
+                        oDialog.Multiselect = false;
+                        oDialog.Filter = "KML-files|*.kml";
+
+                        if (oDialog.ShowDialog() == DialogResult.OK)
+                        {
+                            bool isLoaded = false;
+                            KMLData kmlData = null;
+                            try
+                            {
+                                kmlData = TinyKML.Read(oDialog.FileName);
+                                isLoaded = true;
+                            }
+                            catch (Exception ex)
+                            {
+                                ProcessException(ex, true);
+                            }
+
+                            if (isLoaded)
+                            {
+
+                                TrackOffset tFilter = new TrackOffset(nDialog.Value1, nDialog.Value2);
+                                
+
+                                for (int i = 0; i < kmlData.Count; i++)
+                                {
+                                    if (kmlData[i].PlacemarkItem.Count > 1)
+                                    {
+                                        
+                                        for (int j = 0; j < kmlData[i].PlacemarkItem.Count; j++)
+                                        {
+                                            double lat_rad = Algorithms.Deg2Rad(kmlData[i].PlacemarkItem[j].Latitude);
+                                            double lon_rad = Algorithms.Deg2Rad(kmlData[i].PlacemarkItem[j].Longitude);
+                                            double dpt = kmlData[i].PlacemarkItem[j].Altitude;
+
+                                            tFilter.Process(lat_rad, lon_rad, dpt, DateTime.Now, out lat_rad, out lon_rad, out _, out _);
+
+                                            kmlData[i].PlacemarkItem[j].Latitude = Algorithms.Rad2Deg(lat_rad);
+                                            kmlData[i].PlacemarkItem[j].Longitude = Algorithms.Rad2Deg(lon_rad);
+                                        }
+                                    }
+                                }
+
+                                using (SaveFileDialog sDialog = new SaveFileDialog())
+                                {
+                                    sDialog.Title = "Select filename to save filtered track...";
+                                    sDialog.DefaultExt = "kml";
+                                    sDialog.Filter = "KML files (*.kml)|*.kml";
+
+                                    var fName = string.Format("FLT_{0}", Path.GetFileName(oDialog.FileName));
+                                    var fPath = Path.GetDirectoryName(oDialog.FileName);
+
+                                    sDialog.FileName = Path.Combine(fPath, fName);
+
+                                    if (sDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                                    {
+                                        bool isSaved = false;
+                                        try
+                                        {
+                                            TinyKML.Write(kmlData, sDialog.FileName);
+                                            isSaved = true;
+                                        }
+                                        catch (Exception ex)
+                                        {
+                                            ProcessException(ex, true);
+                                        }
+
+                                        if (isSaved)
+                                            MessageBox.Show("Tracks successfully saved.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+        #endregion
 
         #endregion
 
@@ -1225,7 +1522,7 @@ namespace uNav
                     dResult = MessageBox.Show("Save tracks before exit?",
                     string.Format("{0} {1} - Question", appicon, Application.ProductName),
                     isRestart ? MessageBoxButtons.YesNo : MessageBoxButtons.YesNoCancel,
-                    MessageBoxIcon.Question);
+                    MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
 
                     if (dResult == DialogResult.Yes)
                         tracksExportAsBtn_Click(tracksExportAsBtn, EventArgs.Empty);
@@ -1240,7 +1537,7 @@ namespace uNav
                     (MessageBox.Show("Close application?",
                     string.Format("{0} {1} - Question", appicon, Application.ProductName),
                     MessageBoxButtons.YesNo,
-                    MessageBoxIcon.Question) != DialogResult.Yes);
+                    MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) != DialogResult.Yes);
             }
 
             if (!e.Cancel)
@@ -1696,7 +1993,7 @@ namespace uNav
                 MessageBox.Show(ex.Message,
                     string.Format("{0} {1} - Error", appicon, Application.ProductName),
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
-        }
+        }        
 
         private void deviceInfoViewBtn_Click(object sender, EventArgs e)
         {

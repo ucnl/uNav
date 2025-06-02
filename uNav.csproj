@@ -68,6 +68,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\Num2Dialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Num2Dialog.Designer.cs">
+      <DependentUpon>Num2Dialog.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\NumDialog.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +109,9 @@
     <Compile Include="uNavCore\uNavPort.cs" />
     <Compile Include="usContainer.cs" />
     <Compile Include="uNavUtils.cs" />
+    <EmbeddedResource Include="Controls\Num2Dialog.resx">
+      <DependentUpon>Num2Dialog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\NumDialog.resx" />
     <EmbeddedResource Include="Controls\SelectLocationDialog.resx" />
     <EmbeddedResource Include="Controls\SettingsEditor.resx">

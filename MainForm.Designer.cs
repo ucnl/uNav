@@ -48,6 +48,12 @@
             this.utilsBtn = new System.Windows.Forms.ToolStripDropDownButton();
             this.toolStripSeparator24 = new System.Windows.Forms.ToolStripSeparator();
             this.deviceInfoViewBtn = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator25 = new System.Windows.Forms.ToolStripSeparator();
+            this.utilstrackUtilsBtn = new System.Windows.Forms.ToolStripMenuItem();
+            this.utilsTrackUtilsSmoothMAVBtn = new System.Windows.Forms.ToolStripMenuItem();
+            this.utilsTrackUtilsMedianBtn = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator26 = new System.Windows.Forms.ToolStripSeparator();
+            this.utilsTrackUtilsShiftByXYBtn = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.infoBtn = new System.Windows.Forms.ToolStripButton();
             this.tracksBtn = new System.Windows.Forms.ToolStripDropDownButton();
@@ -266,7 +272,9 @@
             this.utilsBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.utilsBtn.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripSeparator24,
-            this.deviceInfoViewBtn});
+            this.deviceInfoViewBtn,
+            this.toolStripSeparator25,
+            this.utilstrackUtilsBtn});
             resources.ApplyResources(this.utilsBtn, "utilsBtn");
             this.utilsBtn.Name = "utilsBtn";
             // 
@@ -280,6 +288,44 @@
             resources.ApplyResources(this.deviceInfoViewBtn, "deviceInfoViewBtn");
             this.deviceInfoViewBtn.Name = "deviceInfoViewBtn";
             this.deviceInfoViewBtn.Click += new System.EventHandler(this.deviceInfoViewBtn_Click);
+            // 
+            // toolStripSeparator25
+            // 
+            this.toolStripSeparator25.Name = "toolStripSeparator25";
+            resources.ApplyResources(this.toolStripSeparator25, "toolStripSeparator25");
+            // 
+            // utilstrackUtilsBtn
+            // 
+            this.utilstrackUtilsBtn.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.utilsTrackUtilsSmoothMAVBtn,
+            this.utilsTrackUtilsMedianBtn,
+            this.toolStripSeparator26,
+            this.utilsTrackUtilsShiftByXYBtn});
+            resources.ApplyResources(this.utilstrackUtilsBtn, "utilstrackUtilsBtn");
+            this.utilstrackUtilsBtn.Name = "utilstrackUtilsBtn";
+            // 
+            // utilsTrackUtilsSmoothMAVBtn
+            // 
+            this.utilsTrackUtilsSmoothMAVBtn.Name = "utilsTrackUtilsSmoothMAVBtn";
+            resources.ApplyResources(this.utilsTrackUtilsSmoothMAVBtn, "utilsTrackUtilsSmoothMAVBtn");
+            this.utilsTrackUtilsSmoothMAVBtn.Click += new System.EventHandler(this.utilsTrackUtilsSmoothMAVBtn_Click);
+            // 
+            // utilsTrackUtilsMedianBtn
+            // 
+            this.utilsTrackUtilsMedianBtn.Name = "utilsTrackUtilsMedianBtn";
+            resources.ApplyResources(this.utilsTrackUtilsMedianBtn, "utilsTrackUtilsMedianBtn");
+            this.utilsTrackUtilsMedianBtn.Click += new System.EventHandler(this.utilsTrackUtilsMedianBtn_Click);
+            // 
+            // toolStripSeparator26
+            // 
+            this.toolStripSeparator26.Name = "toolStripSeparator26";
+            resources.ApplyResources(this.toolStripSeparator26, "toolStripSeparator26");
+            // 
+            // utilsTrackUtilsShiftByXYBtn
+            // 
+            this.utilsTrackUtilsShiftByXYBtn.Name = "utilsTrackUtilsShiftByXYBtn";
+            resources.ApplyResources(this.utilsTrackUtilsShiftByXYBtn, "utilsTrackUtilsShiftByXYBtn");
+            this.utilsTrackUtilsShiftByXYBtn.Click += new System.EventHandler(this.utilsTrackUtilsShiftByXYBtn_Click);
             // 
             // toolStripSeparator4
             // 
@@ -806,6 +852,12 @@
         private System.Windows.Forms.ToolStripMenuItem tracksExportAsBtn;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator23;
         private System.Windows.Forms.ToolStripMenuItem tracksClearAllBtn;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator25;
+        private System.Windows.Forms.ToolStripMenuItem utilstrackUtilsBtn;
+        private System.Windows.Forms.ToolStripMenuItem utilsTrackUtilsSmoothMAVBtn;
+        private System.Windows.Forms.ToolStripMenuItem utilsTrackUtilsMedianBtn;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator26;
+        private System.Windows.Forms.ToolStripMenuItem utilsTrackUtilsShiftByXYBtn;
     }
 }
 
