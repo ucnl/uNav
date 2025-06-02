@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using UCNLDrivers;
 using UCNLUI;
@@ -160,6 +154,7 @@ namespace uNav.Controls
                 result.IsAutoSoundSpeed = isSpeedOfSoundAuto;
                 result.SoundSpeed_mps = speedOfSound;
                 result.WaterTemperature_C = waterTemperature;
+
                 result.TargetMaxSpeed_mps = targetMaxSpeed;
                 result.TrackSmootherRangeThreshold_m = sFilterRangeThreshold;
                 result.TrackSmootherFIFOSize = sFilterFIFOSize;
@@ -182,6 +177,13 @@ namespace uNav.Controls
 
                 inportBaudrate = value.InPortBaudrate;
                 outportBaudrate = value.SerialBypassBaudrate;
+
+                isSalinityAuto = value.IsAutoSalinity;
+                salinity_PSU = value.Salinity_PSU;
+
+                isSpeedOfSoundAuto = value.IsAutoSoundSpeed;
+                speedOfSound = value.SoundSpeed_mps;
+                waterTemperature = value.WaterTemperature_C;
 
                 targetMaxSpeed = value.TargetMaxSpeed_mps;
                 sFilterRangeThreshold = value.TrackSmootherRangeThreshold_m;

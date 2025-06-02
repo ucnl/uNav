@@ -145,10 +145,10 @@
             // physicsTabPage
             // 
             this.physicsTabPage.Controls.Add(this.physicsTable);
-            this.physicsTabPage.Location = new System.Drawing.Point(4, 37);
+            this.physicsTabPage.Location = new System.Drawing.Point(4, 41);
             this.physicsTabPage.Name = "physicsTabPage";
             this.physicsTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.physicsTabPage.Size = new System.Drawing.Size(750, 420);
+            this.physicsTabPage.Size = new System.Drawing.Size(750, 416);
             this.physicsTabPage.TabIndex = 1;
             this.physicsTabPage.Text = "🧪 PHYSICS";
             this.physicsTabPage.UseVisualStyleBackColor = true;
@@ -196,7 +196,7 @@
             this.physicsTable.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.physicsTable.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.physicsTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.physicsTable.Size = new System.Drawing.Size(744, 414);
+            this.physicsTable.Size = new System.Drawing.Size(744, 410);
             this.physicsTable.TabIndex = 0;
             // 
             // label1
@@ -205,7 +205,7 @@
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(260, 40);
+            this.label1.Size = new System.Drawing.Size(318, 45);
             this.label1.TabIndex = 0;
             this.label1.Text = "Salinity, PSU";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -214,9 +214,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Location = new System.Drawing.Point(3, 40);
+            this.label2.Location = new System.Drawing.Point(3, 45);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(260, 40);
+            this.label2.Size = new System.Drawing.Size(318, 45);
             this.label2.TabIndex = 1;
             this.label2.Text = "Water temperature, °C";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -225,9 +225,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Location = new System.Drawing.Point(3, 80);
+            this.label3.Location = new System.Drawing.Point(3, 90);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(260, 40);
+            this.label3.Size = new System.Drawing.Size(318, 45);
             this.label3.TabIndex = 2;
             this.label3.Text = "Speed of sound, m/s";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -236,21 +236,21 @@
             // 
             this.salinityEdit.DecimalPlaces = 1;
             this.salinityEdit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.salinityEdit.Location = new System.Drawing.Point(269, 3);
+            this.salinityEdit.Location = new System.Drawing.Point(327, 3);
             this.salinityEdit.Maximum = new decimal(new int[] {
             40,
             0,
             0,
             0});
             this.salinityEdit.Name = "salinityEdit";
-            this.salinityEdit.Size = new System.Drawing.Size(146, 34);
+            this.salinityEdit.Size = new System.Drawing.Size(146, 39);
             this.salinityEdit.TabIndex = 1;
             // 
             // waterTemperatureEdit
             // 
             this.waterTemperatureEdit.DecimalPlaces = 1;
             this.waterTemperatureEdit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.waterTemperatureEdit.Location = new System.Drawing.Point(269, 43);
+            this.waterTemperatureEdit.Location = new System.Drawing.Point(327, 48);
             this.waterTemperatureEdit.Maximum = new decimal(new int[] {
             46,
             0,
@@ -262,7 +262,7 @@
             0,
             -2147483648});
             this.waterTemperatureEdit.Name = "waterTemperatureEdit";
-            this.waterTemperatureEdit.Size = new System.Drawing.Size(146, 34);
+            this.waterTemperatureEdit.Size = new System.Drawing.Size(146, 39);
             this.waterTemperatureEdit.TabIndex = 4;
             this.waterTemperatureEdit.Value = new decimal(new int[] {
             10,
@@ -274,7 +274,7 @@
             // 
             this.speedOfSoundEdit.DecimalPlaces = 1;
             this.speedOfSoundEdit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.speedOfSoundEdit.Location = new System.Drawing.Point(269, 83);
+            this.speedOfSoundEdit.Location = new System.Drawing.Point(327, 93);
             this.speedOfSoundEdit.Maximum = new decimal(new int[] {
             1600,
             0,
@@ -286,7 +286,7 @@
             0,
             0});
             this.speedOfSoundEdit.Name = "speedOfSoundEdit";
-            this.speedOfSoundEdit.Size = new System.Drawing.Size(146, 34);
+            this.speedOfSoundEdit.Size = new System.Drawing.Size(146, 39);
             this.speedOfSoundEdit.TabIndex = 5;
             this.speedOfSoundEdit.Value = new decimal(new int[] {
             1450,
@@ -297,9 +297,9 @@
             // isAutoSalinityChb
             // 
             this.isAutoSalinityChb.AutoSize = true;
-            this.isAutoSalinityChb.Location = new System.Drawing.Point(421, 3);
+            this.isAutoSalinityChb.Location = new System.Drawing.Point(479, 3);
             this.isAutoSalinityChb.Name = "isAutoSalinityChb";
-            this.isAutoSalinityChb.Size = new System.Drawing.Size(77, 32);
+            this.isAutoSalinityChb.Size = new System.Drawing.Size(91, 36);
             this.isAutoSalinityChb.TabIndex = 2;
             this.isAutoSalinityChb.Text = "Auto";
             this.isAutoSalinityChb.UseVisualStyleBackColor = true;
@@ -308,9 +308,9 @@
             // isAutoSoundSpeedChb
             // 
             this.isAutoSoundSpeedChb.AutoSize = true;
-            this.isAutoSoundSpeedChb.Location = new System.Drawing.Point(421, 83);
+            this.isAutoSoundSpeedChb.Location = new System.Drawing.Point(479, 93);
             this.isAutoSoundSpeedChb.Name = "isAutoSoundSpeedChb";
-            this.isAutoSoundSpeedChb.Size = new System.Drawing.Size(77, 32);
+            this.isAutoSoundSpeedChb.Size = new System.Drawing.Size(91, 36);
             this.isAutoSoundSpeedChb.TabIndex = 6;
             this.isAutoSoundSpeedChb.Text = "Auto";
             this.isAutoSoundSpeedChb.UseVisualStyleBackColor = true;
@@ -320,9 +320,9 @@
             // 
             this.salinityFromDbBtn.AutoSize = true;
             this.salinityFromDbBtn.Dock = System.Windows.Forms.DockStyle.Left;
-            this.salinityFromDbBtn.Location = new System.Drawing.Point(504, 0);
+            this.salinityFromDbBtn.Location = new System.Drawing.Point(576, 0);
             this.salinityFromDbBtn.Name = "salinityFromDbBtn";
-            this.salinityFromDbBtn.Size = new System.Drawing.Size(39, 40);
+            this.salinityFromDbBtn.Size = new System.Drawing.Size(47, 45);
             this.salinityFromDbBtn.TabIndex = 3;
             this.salinityFromDbBtn.TabStop = true;
             this.salinityFromDbBtn.Text = "🔎";
@@ -333,9 +333,9 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Location = new System.Drawing.Point(3, 140);
+            this.label4.Location = new System.Drawing.Point(3, 155);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(260, 40);
+            this.label4.Size = new System.Drawing.Size(318, 45);
             this.label4.TabIndex = 9;
             this.label4.Text = "Target max speed, m/s";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -344,7 +344,7 @@
             // 
             this.targetMaxSpeedEdit.DecimalPlaces = 1;
             this.targetMaxSpeedEdit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.targetMaxSpeedEdit.Location = new System.Drawing.Point(269, 143);
+            this.targetMaxSpeedEdit.Location = new System.Drawing.Point(327, 158);
             this.targetMaxSpeedEdit.Maximum = new decimal(new int[] {
             5,
             0,
@@ -356,7 +356,7 @@
             0,
             65536});
             this.targetMaxSpeedEdit.Name = "targetMaxSpeedEdit";
-            this.targetMaxSpeedEdit.Size = new System.Drawing.Size(146, 34);
+            this.targetMaxSpeedEdit.Size = new System.Drawing.Size(146, 39);
             this.targetMaxSpeedEdit.TabIndex = 7;
             this.targetMaxSpeedEdit.Value = new decimal(new int[] {
             1,
@@ -368,9 +368,9 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Location = new System.Drawing.Point(3, 180);
+            this.label5.Location = new System.Drawing.Point(3, 200);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(260, 40);
+            this.label5.Size = new System.Drawing.Size(318, 45);
             this.label5.TabIndex = 11;
             this.label5.Text = "S-filter range threshold, m";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -379,9 +379,9 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Location = new System.Drawing.Point(3, 220);
+            this.label6.Location = new System.Drawing.Point(3, 245);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(260, 40);
+            this.label6.Size = new System.Drawing.Size(318, 45);
             this.label6.TabIndex = 12;
             this.label6.Text = "S-filter FIFO size";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -389,7 +389,7 @@
             // sThresholdEdit
             // 
             this.sThresholdEdit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sThresholdEdit.Location = new System.Drawing.Point(269, 183);
+            this.sThresholdEdit.Location = new System.Drawing.Point(327, 203);
             this.sThresholdEdit.Maximum = new decimal(new int[] {
             999,
             0,
@@ -401,7 +401,7 @@
             0,
             0});
             this.sThresholdEdit.Name = "sThresholdEdit";
-            this.sThresholdEdit.Size = new System.Drawing.Size(146, 34);
+            this.sThresholdEdit.Size = new System.Drawing.Size(146, 39);
             this.sThresholdEdit.TabIndex = 8;
             this.sThresholdEdit.Value = new decimal(new int[] {
             100,
@@ -412,7 +412,7 @@
             // sFIFOSizeEdit
             // 
             this.sFIFOSizeEdit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sFIFOSizeEdit.Location = new System.Drawing.Point(269, 223);
+            this.sFIFOSizeEdit.Location = new System.Drawing.Point(327, 248);
             this.sFIFOSizeEdit.Maximum = new decimal(new int[] {
             16,
             0,
@@ -424,7 +424,7 @@
             0,
             0});
             this.sFIFOSizeEdit.Name = "sFIFOSizeEdit";
-            this.sFIFOSizeEdit.Size = new System.Drawing.Size(146, 34);
+            this.sFIFOSizeEdit.Size = new System.Drawing.Size(146, 39);
             this.sFIFOSizeEdit.TabIndex = 9;
             this.sFIFOSizeEdit.Value = new decimal(new int[] {
             4,
@@ -436,9 +436,9 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label7.Location = new System.Drawing.Point(3, 260);
+            this.label7.Location = new System.Drawing.Point(3, 290);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(260, 40);
+            this.label7.Size = new System.Drawing.Size(318, 45);
             this.label7.TabIndex = 15;
             this.label7.Text = "DH-filter range threshold, m";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -446,7 +446,7 @@
             // dhThresholdEdit
             // 
             this.dhThresholdEdit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dhThresholdEdit.Location = new System.Drawing.Point(269, 263);
+            this.dhThresholdEdit.Location = new System.Drawing.Point(327, 293);
             this.dhThresholdEdit.Maximum = new decimal(new int[] {
             99,
             0,
@@ -458,7 +458,7 @@
             0,
             0});
             this.dhThresholdEdit.Name = "dhThresholdEdit";
-            this.dhThresholdEdit.Size = new System.Drawing.Size(146, 34);
+            this.dhThresholdEdit.Size = new System.Drawing.Size(146, 39);
             this.dhThresholdEdit.TabIndex = 10;
             this.dhThresholdEdit.Value = new decimal(new int[] {
             5,
@@ -469,7 +469,7 @@
             // dhFIFOSizeEdit
             // 
             this.dhFIFOSizeEdit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dhFIFOSizeEdit.Location = new System.Drawing.Point(269, 303);
+            this.dhFIFOSizeEdit.Location = new System.Drawing.Point(327, 338);
             this.dhFIFOSizeEdit.Maximum = new decimal(new int[] {
             16,
             0,
@@ -481,7 +481,7 @@
             0,
             0});
             this.dhFIFOSizeEdit.Name = "dhFIFOSizeEdit";
-            this.dhFIFOSizeEdit.Size = new System.Drawing.Size(146, 34);
+            this.dhFIFOSizeEdit.Size = new System.Drawing.Size(146, 39);
             this.dhFIFOSizeEdit.TabIndex = 11;
             this.dhFIFOSizeEdit.Value = new decimal(new int[] {
             8,
@@ -493,9 +493,9 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label8.Location = new System.Drawing.Point(3, 340);
+            this.label8.Location = new System.Drawing.Point(3, 380);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(260, 40);
+            this.label8.Size = new System.Drawing.Size(318, 45);
             this.label8.TabIndex = 17;
             this.label8.Text = "Course estimation by, points";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -503,7 +503,7 @@
             // cFIFOSizeEdit
             // 
             this.cFIFOSizeEdit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cFIFOSizeEdit.Location = new System.Drawing.Point(269, 343);
+            this.cFIFOSizeEdit.Location = new System.Drawing.Point(327, 383);
             this.cFIFOSizeEdit.Maximum = new decimal(new int[] {
             16,
             0,
@@ -515,7 +515,7 @@
             0,
             0});
             this.cFIFOSizeEdit.Name = "cFIFOSizeEdit";
-            this.cFIFOSizeEdit.Size = new System.Drawing.Size(146, 34);
+            this.cFIFOSizeEdit.Size = new System.Drawing.Size(146, 39);
             this.cFIFOSizeEdit.TabIndex = 12;
             this.cFIFOSizeEdit.Value = new decimal(new int[] {
             4,
@@ -527,9 +527,9 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label13.Location = new System.Drawing.Point(3, 300);
+            this.label13.Location = new System.Drawing.Point(3, 335);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(260, 40);
+            this.label13.Size = new System.Drawing.Size(318, 45);
             this.label13.TabIndex = 20;
             this.label13.Text = "DH-filter FIFO size";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -537,10 +537,10 @@
             // mainTabPage
             // 
             this.mainTabPage.Controls.Add(this.tableLayoutPanel2);
-            this.mainTabPage.Location = new System.Drawing.Point(4, 37);
+            this.mainTabPage.Location = new System.Drawing.Point(4, 41);
             this.mainTabPage.Name = "mainTabPage";
             this.mainTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.mainTabPage.Size = new System.Drawing.Size(750, 420);
+            this.mainTabPage.Size = new System.Drawing.Size(750, 416);
             this.mainTabPage.TabIndex = 0;
             this.mainTabPage.Text = "❗ CONNECTION";
             this.mainTabPage.UseVisualStyleBackColor = true;
@@ -563,7 +563,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(744, 414);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(744, 410);
             this.tableLayoutPanel2.TabIndex = 2;
             // 
             // outportBaudrateCbx
@@ -572,9 +572,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.outportBaudrateCbx.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.outportBaudrateCbx.FormattingEnabled = true;
-            this.outportBaudrateCbx.Location = new System.Drawing.Point(261, 45);
+            this.outportBaudrateCbx.Location = new System.Drawing.Point(313, 37);
             this.outportBaudrateCbx.Name = "outportBaudrateCbx";
-            this.outportBaudrateCbx.Size = new System.Drawing.Size(242, 36);
+            this.outportBaudrateCbx.Size = new System.Drawing.Size(242, 40);
             this.outportBaudrateCbx.TabIndex = 1;
             // 
             // inportBaudrateCbx
@@ -583,9 +583,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.inportBaudrateCbx.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.inportBaudrateCbx.FormattingEnabled = true;
-            this.inportBaudrateCbx.Location = new System.Drawing.Point(261, 3);
+            this.inportBaudrateCbx.Location = new System.Drawing.Point(313, 3);
             this.inportBaudrateCbx.Name = "inportBaudrateCbx";
-            this.inportBaudrateCbx.Size = new System.Drawing.Size(242, 36);
+            this.inportBaudrateCbx.Size = new System.Drawing.Size(242, 40);
             this.inportBaudrateCbx.TabIndex = 0;
             // 
             // label14
@@ -594,7 +594,7 @@
             this.label14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label14.Location = new System.Drawing.Point(3, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(252, 42);
+            this.label14.Size = new System.Drawing.Size(304, 34);
             this.label14.TabIndex = 2;
             this.label14.Text = "Input port baudrate";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -603,9 +603,9 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label15.Location = new System.Drawing.Point(3, 42);
+            this.label15.Location = new System.Drawing.Point(3, 34);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(252, 42);
+            this.label15.Size = new System.Drawing.Size(304, 34);
             this.label15.TabIndex = 3;
             this.label15.Text = "Serial bypass port baudrate";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -613,10 +613,10 @@
             // extraTabPage
             // 
             this.extraTabPage.Controls.Add(this.tableLayoutPanel1);
-            this.extraTabPage.Location = new System.Drawing.Point(4, 37);
+            this.extraTabPage.Location = new System.Drawing.Point(4, 41);
             this.extraTabPage.Name = "extraTabPage";
             this.extraTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.extraTabPage.Size = new System.Drawing.Size(750, 420);
+            this.extraTabPage.Size = new System.Drawing.Size(750, 416);
             this.extraTabPage.TabIndex = 2;
             this.extraTabPage.Text = "🛸 EXTRA";
             this.extraTabPage.UseVisualStyleBackColor = true;
@@ -651,7 +651,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(744, 414);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(744, 410);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // label9
@@ -661,7 +661,7 @@
             this.label9.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label9.Location = new System.Drawing.Point(3, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(289, 40);
+            this.label9.Size = new System.Drawing.Size(353, 45);
             this.label9.TabIndex = 0;
             this.label9.Text = "Number of track points to show";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -669,7 +669,7 @@
             // numberOfPointsToShowEdit
             // 
             this.numberOfPointsToShowEdit.Dock = System.Windows.Forms.DockStyle.Left;
-            this.numberOfPointsToShowEdit.Location = new System.Drawing.Point(298, 3);
+            this.numberOfPointsToShowEdit.Location = new System.Drawing.Point(362, 3);
             this.numberOfPointsToShowEdit.Maximum = new decimal(new int[] {
             2048,
             0,
@@ -681,7 +681,7 @@
             0,
             0});
             this.numberOfPointsToShowEdit.Name = "numberOfPointsToShowEdit";
-            this.numberOfPointsToShowEdit.Size = new System.Drawing.Size(120, 34);
+            this.numberOfPointsToShowEdit.Size = new System.Drawing.Size(120, 39);
             this.numberOfPointsToShowEdit.TabIndex = 1;
             this.numberOfPointsToShowEdit.Value = new decimal(new int[] {
             512,
@@ -693,7 +693,7 @@
             // 
             this.tileSizeEdit.Dock = System.Windows.Forms.DockStyle.Left;
             this.tileSizeEdit.Enabled = false;
-            this.tileSizeEdit.Location = new System.Drawing.Point(298, 56);
+            this.tileSizeEdit.Location = new System.Drawing.Point(362, 61);
             this.tileSizeEdit.Maximum = new decimal(new int[] {
             256,
             0,
@@ -705,7 +705,7 @@
             0,
             0});
             this.tileSizeEdit.Name = "tileSizeEdit";
-            this.tileSizeEdit.Size = new System.Drawing.Size(120, 34);
+            this.tileSizeEdit.Size = new System.Drawing.Size(120, 39);
             this.tileSizeEdit.TabIndex = 2;
             this.tileSizeEdit.Value = new decimal(new int[] {
             256,
@@ -718,9 +718,9 @@
             this.label10.AutoSize = true;
             this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label10.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label10.Location = new System.Drawing.Point(3, 53);
+            this.label10.Location = new System.Drawing.Point(3, 58);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(289, 40);
+            this.label10.Size = new System.Drawing.Size(353, 45);
             this.label10.TabIndex = 2;
             this.label10.Text = "Tile size, px";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -729,9 +729,9 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label11.Location = new System.Drawing.Point(3, 93);
+            this.label11.Location = new System.Drawing.Point(3, 103);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(289, 178);
+            this.label11.Size = new System.Drawing.Size(353, 178);
             this.label11.TabIndex = 4;
             this.label11.Text = "Tile servers";
             this.label11.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -740,11 +740,11 @@
             // 
             this.tileServersTxb.Dock = System.Windows.Forms.DockStyle.Top;
             this.tileServersTxb.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tileServersTxb.Location = new System.Drawing.Point(298, 96);
+            this.tileServersTxb.Location = new System.Drawing.Point(362, 106);
             this.tileServersTxb.Multiline = true;
             this.tileServersTxb.Name = "tileServersTxb";
             this.tileServersTxb.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.tileServersTxb.Size = new System.Drawing.Size(443, 172);
+            this.tileServersTxb.Size = new System.Drawing.Size(379, 172);
             this.tileServersTxb.TabIndex = 3;
             this.tileServersTxb.Text = "https://a.tile.openstreetmap.org\r\nhttps://b.tile.openstreetmap.org\r\nhttps://c.til" +
     "e.openstreetmap.org";
@@ -753,9 +753,9 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label12.Location = new System.Drawing.Point(3, 271);
+            this.label12.Location = new System.Drawing.Point(3, 281);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(289, 28);
+            this.label12.Size = new System.Drawing.Size(353, 32);
             this.label12.TabIndex = 6;
             this.label12.Text = "Enable tile download";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -764,9 +764,9 @@
             // 
             this.enableTileDonwloadChb.AutoSize = true;
             this.enableTileDonwloadChb.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.enableTileDonwloadChb.Location = new System.Drawing.Point(298, 274);
+            this.enableTileDonwloadChb.Location = new System.Drawing.Point(362, 284);
             this.enableTileDonwloadChb.Name = "enableTileDonwloadChb";
-            this.enableTileDonwloadChb.Size = new System.Drawing.Size(443, 22);
+            this.enableTileDonwloadChb.Size = new System.Drawing.Size(379, 26);
             this.enableTileDonwloadChb.TabIndex = 4;
             this.enableTileDonwloadChb.UseVisualStyleBackColor = true;
             // 
@@ -774,9 +774,9 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label16.Location = new System.Drawing.Point(3, 299);
+            this.label16.Location = new System.Drawing.Point(3, 313);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(289, 42);
+            this.label16.Size = new System.Drawing.Size(353, 34);
             this.label16.TabIndex = 7;
             this.label16.Text = "RWLT Mode⚠";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -789,18 +789,18 @@
             this.rwlt_modeCbx.Items.AddRange(new object[] {
             "0",
             "1"});
-            this.rwlt_modeCbx.Location = new System.Drawing.Point(298, 302);
+            this.rwlt_modeCbx.Location = new System.Drawing.Point(362, 316);
             this.rwlt_modeCbx.Name = "rwlt_modeCbx";
-            this.rwlt_modeCbx.Size = new System.Drawing.Size(121, 36);
+            this.rwlt_modeCbx.Size = new System.Drawing.Size(121, 40);
             this.rwlt_modeCbx.TabIndex = 8;
             // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label17.Location = new System.Drawing.Point(3, 341);
+            this.label17.Location = new System.Drawing.Point(3, 347);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(289, 42);
+            this.label17.Size = new System.Drawing.Size(353, 34);
             this.label17.TabIndex = 9;
             this.label17.Text = "RWLT Pinger depth rating⚠";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -814,14 +814,14 @@
             "0",
             "1",
             "2"});
-            this.rwlt_dratingCbx.Location = new System.Drawing.Point(298, 344);
+            this.rwlt_dratingCbx.Location = new System.Drawing.Point(362, 350);
             this.rwlt_dratingCbx.Name = "rwlt_dratingCbx";
-            this.rwlt_dratingCbx.Size = new System.Drawing.Size(121, 36);
+            this.rwlt_dratingCbx.Size = new System.Drawing.Size(121, 40);
             this.rwlt_dratingCbx.TabIndex = 10;
             // 
             // SettingsEditor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(782, 553);
             this.Controls.Add(this.mainTabControl);
