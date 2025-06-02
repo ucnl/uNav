@@ -390,8 +390,8 @@ namespace uNav.uNavCore
                 NMEAParser.AddProprietarySentenceDescription(ManufacturerCodes.UNV, "1", "x,x.x,x.x");
                 // $PUNV2,[tDpt_m],[wTmp_celsius]
                 NMEAParser.AddProprietarySentenceDescription(ManufacturerCodes.UNV, "2", "x.x,x.x");
-                // $PUNV3,tID,tLt,tLn,tDpt,tCrs,tRer,Age,RPLt,RPLn,Dst2RP,Crs2RP,Crs4RP,aLt,aLn,aCrs,aSpd
-                NMEAParser.AddProprietarySentenceDescription(ManufacturerCodes.UNV, "3", "x,x.x,x.x,x.x,x.x,x.x,x.x,x.x,x.x,x.x,x.x,x.x,x.x,x.x,x.x,x.x,x.x");
+                // $PUNV3,tID,tLt,tLn,tDpt,tCrs,tRer,Age
+                NMEAParser.AddProprietarySentenceDescription(ManufacturerCodes.UNV, "3", "x,x.x,x.x,x.x,x.x,x.x,x.x");
                 // $PUNV4,tID,rpLt,prLn,dst2rp,crs2rp,Crs4rp,age
                 NMEAParser.AddProprietarySentenceDescription(ManufacturerCodes.UNV, "4", "x,x.x,x.x,x.x,x.x,x.x,x.x");
                 // $PUNV5,gnssLt,gnssLn,gnssCrs,gnssSog
@@ -532,7 +532,7 @@ namespace uNav.uNavCore
 
         private void Parse_UNV3(object[] parameters)
         {
-            // $PUNV3,tID,tLt,tLn,tDpt,tCrs,tRer,Age,RPLt,RPLn,Dst2RP,Crs2RP,Crs4RP,aLt,aLn,aCrs,aSpd,aAge
+            // $PUNV3,tID,tLt,tLn,tDpt,tCrs,tRer,Age
             int tID = -1;
             double tLt = double.NaN;
             double tLn = double.NaN;
@@ -540,16 +540,7 @@ namespace uNav.uNavCore
             double tCrs = double.NaN;
             double tRer = double.NaN;
             double Age = double.NaN;
-            double rpLt = double.NaN;
-            double rpLn = double.NaN;
-            double dst2rp = double.NaN;
-            double crs2rp = double.NaN;
-            double crs4rp = double.NaN;
-            double aLt = double.NaN;
-            double aLn = double.NaN;
-            double aCrs = double.NaN;
-            double aSpd = double.NaN;
-            double aAge = double.NaN;
+            
             bool isOk = false;            
 
             try
@@ -561,16 +552,7 @@ namespace uNav.uNavCore
                 tCrs = uNav.O2D(parameters[4]);
                 tRer = uNav.O2D(parameters[5]);
                 Age = uNav.O2D(parameters[6]);
-                rpLt = uNav.O2D(parameters[7]);
-                rpLn = uNav.O2D(parameters[8]);
-                dst2rp = uNav.O2D(parameters[9]);
-                crs2rp = uNav.O2D(parameters[10]);
-                crs4rp = uNav.O2D(parameters[11]);
-                aLt = uNav.O2D(parameters[12]);
-                aLn = uNav.O2D(parameters[13]);
-                aCrs = uNav.O2D(parameters[14]);
-                aSpd = uNav.O2D(parameters[15]);
-                aAge = uNav.O2D(parameters[16]);
+              
                 isOk = true;                
             }
             catch (Exception ex)
@@ -587,6 +569,11 @@ namespace uNav.uNavCore
                         StartTimer(2000);
                 }
 
+                if ((tID >= 0) && !double.IsNaN(tLt) && !double.IsNaN(tLn))
+                {
+                    TrackPointReceived.Rise(this,
+                        new TrackPointEventArgs(string.Format("#{0}", tID), tLt, tLn, tDpt, tRer, tCrs, DateTime.Now));
+                }
             }
         }
 
@@ -775,7 +762,7 @@ namespace uNav.uNavCore
                 bDpt = uNav.O2D(parameters[3]);
                 bBat = uNav.O2D(parameters[4]);
                 bTOA = uNav.O2D(parameters[5]);
-                isOk = (baseID >= 0) && (!double.IsNaN(bLat)) && (!double.IsNaN(bLon)) && (!double.IsNaN(bDpt));
+                isOk = (baseID >= 0) && (baseID <= 4) && (!double.IsNaN(bLat)) && (!double.IsNaN(bLon)) && (!double.IsNaN(bDpt));
             }
             catch (Exception ex)
             {
@@ -784,7 +771,6 @@ namespace uNav.uNavCore
             
             if (isOk)
             {
-
                 BaseDataReceived.Rise(this, new BaseDataReceivedEventArgs(baseID, bBat));
                 TrackPointReceived.Rise(this, new TrackPointEventArgs(uNav.BaseID2Str(baseID), bLat, bLon, bDpt, DateTime.Now));
             }
@@ -850,8 +836,8 @@ namespace uNav.uNavCore
                     !string.IsNullOrEmpty(qind) &&
                     (qind != "N") && (qind != "V"))
                 {
-                    if (parameters[3].ToString() == "S") lat = -lat;
-                    if (parameters[5].ToString() == "W") lon = -lon;
+                    if (parameters[2].ToString() == "S") lat = -lat;
+                    if (parameters[4].ToString() == "W") lon = -lon;
 
                     isOk = true;
                 }

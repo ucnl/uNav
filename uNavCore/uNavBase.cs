@@ -286,6 +286,7 @@ namespace uNav.uNavCore
                 if (e.IsBatV && bBats.ContainsKey(e.BaseID))
                 {
                     bBats[e.BaseID].Value = e.BatV;
+                    NavigationDataUpdated.Rise(this, EventArgs.Empty);
                 }
             };
 
