@@ -1,11 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using UCNLNav;
 using UCNLUI;
@@ -91,6 +85,20 @@ namespace uNav.Controls
             }
         }
 
-        #endregion        
+        #endregion
+
+        /*
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            // 
+            // SelectLocationDialog
+            // 
+            this.ClientSize = new System.Drawing.Size(285, 247);
+            this.Name = "SelectLocationDialog";
+            this.ResumeLayout(false);
+
+        }
+        */
     }
 }

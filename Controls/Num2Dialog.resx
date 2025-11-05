@@ -117,4 +117,187 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="num2Caption.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 120</value>
+  </data>
+  <data name="&gt;&gt;num2Caption.Name" xml:space="preserve">
+    <value>num2Caption</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="okBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>646, 335</value>
+  </data>
+  <data name="&gt;&gt;num2Caption.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="num2Edit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 39</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Num2Dialog</value>
+  </data>
+  <data name="num1Caption.Text" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="&gt;&gt;cancelBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;num2Caption.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="num2Caption.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;okBtn.Name" xml:space="preserve">
+    <value>okBtn</value>
+  </data>
+  <data name="num2Caption.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 32</value>
+  </data>
+  <data name="&gt;&gt;num2Edit.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="okBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>448, 261</value>
+  </data>
+  <data name="num1Edit.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;num1Edit.Name" xml:space="preserve">
+    <value>num1Edit</value>
+  </data>
+  <data name="cancelBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>231, 261</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Num2Dialog</value>
+  </data>
+  <data name="num1Caption.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 32</value>
+  </data>
+  <data name="num1Edit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 44</value>
+  </data>
+  <data name="&gt;&gt;num1Edit.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="num1Caption.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;okBtn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="okBtn.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="&gt;&gt;num2Edit.Name" xml:space="preserve">
+    <value>num2Edit</value>
+  </data>
+  <data name="okBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 55</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;num2Edit.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cancelBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="num2Caption.Text" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;num1Caption.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cancelBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="&gt;&gt;cancelBtn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="num1Caption.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 9</value>
+  </data>
+  <data name="&gt;&gt;num2Edit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cancelBtn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="&gt;&gt;cancelBtn.Name" xml:space="preserve">
+    <value>cancelBtn</value>
+  </data>
+  <data name="&gt;&gt;num1Caption.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;num1Edit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="num2Edit.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;okBtn.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="num2Caption.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;num1Caption.Name" xml:space="preserve">
+    <value>num1Caption</value>
+  </data>
+  <data name="okBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="okBtn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="&gt;&gt;num1Caption.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;num2Caption.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;okBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;num1Edit.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="num1Edit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 39</value>
+  </data>
+  <data name="cancelBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 55</value>
+  </data>
+  <data name="num2Edit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 155</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>13, 32</value>
+  </data>
+  <data name="cancelBtn.Text" xml:space="preserve">
+    <value>CANCEL</value>
+  </data>
+  <data name="num1Caption.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;cancelBtn.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>

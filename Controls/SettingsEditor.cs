@@ -10,6 +10,25 @@ namespace uNav.Controls
     {
         #region Properties
 
+        bool specControlsEnalbed = false;
+        public bool SpecControlsEnalbed
+        {
+            get
+            {
+                return specControlsEnalbed;
+            }
+            set
+            {
+                specControlsEnalbed = value;
+
+                rwltPingerDRatingLbl.Visible = specControlsEnalbed;
+                rwlt_dratingCbx.Visible = specControlsEnalbed;
+                rwlt_ModeLbl.Visible = specControlsEnalbed;
+                rwlt_modeCbx.Visible = specControlsEnalbed;
+            }
+        }
+
+
         #region mainTab
 
         BaudRate inportBaudrate
@@ -252,13 +271,13 @@ namespace uNav.Controls
         {
             using (SalinityDialog sDialog = new SalinityDialog())
             {
-                sDialog.Text = "Water salinity";
-                sDialog.SalinityCaption = "Salinity, PSU";
-                sDialog.LatCaption = "Lat";
-                sDialog.LonCaption = "Lon";
-                sDialog.CancelBtnCaption = "CANCEL";
+                sDialog.Text = LocalisedStrings.SettingsEditor_WaterSalinity;
+                sDialog.SalinityCaption = LocalisedStrings.SettingsEditor_SalinityPSU;
+                sDialog.LatCaption = LocalisedStrings.SettingsEditor_Lat;
+                sDialog.LonCaption = LocalisedStrings.SettingsEditor_Lon;
+                sDialog.CancelBtnCaption = LocalisedStrings.SettingsEditor_Cancel;
                 sDialog.OkBtnCaption = "OK";
-                sDialog.NearestPntMsg = "Nearest known point";
+                sDialog.NearestPntMsg = LocalisedStrings.SettingsEditor_NearestKnownPoint;
 
                 if (sDialog.ShowDialog() == DialogResult.OK)
                 {

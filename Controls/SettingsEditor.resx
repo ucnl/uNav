@@ -117,4 +117,1761 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="cancelBtn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="cancelBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>645, 496</value>
+  </data>
+  <data name="cancelBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 45</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="cancelBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cancelBtn.Text" xml:space="preserve">
+    <value>CANCEL</value>
+  </data>
+  <data name="&gt;&gt;cancelBtn.Name" xml:space="preserve">
+    <value>cancelBtn</value>
+  </data>
+  <data name="&gt;&gt;cancelBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cancelBtn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cancelBtn.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="okBtn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="okBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>476, 496</value>
+  </data>
+  <data name="okBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 45</value>
+  </data>
+  <data name="okBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="okBtn.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="&gt;&gt;okBtn.Name" xml:space="preserve">
+    <value>okBtn</value>
+  </data>
+  <data name="&gt;&gt;okBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;okBtn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;okBtn.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="setDefaultsBtn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="setDefaultsBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 496</value>
+  </data>
+  <data name="setDefaultsBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 45</value>
+  </data>
+  <data name="setDefaultsBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="setDefaultsBtn.Text" xml:space="preserve">
+    <value>SET DEFAULTS</value>
+  </data>
+  <data name="&gt;&gt;setDefaultsBtn.Name" xml:space="preserve">
+    <value>setDefaultsBtn</value>
+  </data>
+  <data name="&gt;&gt;setDefaultsBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;setDefaultsBtn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;setDefaultsBtn.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="mainTabControl.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;physicsTable.Name" xml:space="preserve">
+    <value>physicsTable</value>
+  </data>
+  <data name="&gt;&gt;physicsTable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;physicsTable.Parent" xml:space="preserve">
+    <value>physicsTabPage</value>
+  </data>
+  <data name="&gt;&gt;physicsTable.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="physicsTable.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="label1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label2" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label3" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="salinityEdit" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="waterTemperatureEdit" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="speedOfSoundEdit" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="isAutoSalinityChb" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="isAutoSoundSpeedChb" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="salinityFromDbBtn" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="label4" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="targetMaxSpeedEdit" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label5" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label6" Row="6" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="sThresholdEdit" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="sFIFOSizeEdit" Row="6" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label7" Row="7" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="dhThresholdEdit" Row="7" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="dhFIFOSizeEdit" Row="8" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label8" Row="9" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="cFIFOSizeEdit" Row="9" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label13" Row="8" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0" /&gt;&lt;Rows Styles="AutoSize,0,AutoSize,0,AutoSize,0,Absolute,20,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="physicsTabPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 41</value>
+  </data>
+  <data name="physicsTabPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="physicsTabPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>750, 416</value>
+  </data>
+  <data name="physicsTabPage.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="physicsTabPage.Text" xml:space="preserve">
+    <value>🧪 PHYSICS</value>
+  </data>
+  <data name="&gt;&gt;physicsTabPage.Name" xml:space="preserve">
+    <value>physicsTabPage</value>
+  </data>
+  <data name="&gt;&gt;physicsTabPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;physicsTabPage.Parent" xml:space="preserve">
+    <value>mainTabControl</value>
+  </data>
+  <data name="&gt;&gt;physicsTabPage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Name" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Parent" xml:space="preserve">
+    <value>mainTabPage</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="outportBaudrateCbx" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="inportBaudrateCbx" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label14" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label15" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,AutoSize,0,AutoSize,0" /&gt;&lt;Rows Styles="AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="mainTabPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 41</value>
+  </data>
+  <data name="mainTabPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="mainTabPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>750, 416</value>
+  </data>
+  <data name="mainTabPage.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="mainTabPage.Text" xml:space="preserve">
+    <value>❗ CONNECTION</value>
+  </data>
+  <data name="&gt;&gt;mainTabPage.Name" xml:space="preserve">
+    <value>mainTabPage</value>
+  </data>
+  <data name="&gt;&gt;mainTabPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mainTabPage.Parent" xml:space="preserve">
+    <value>mainTabControl</value>
+  </data>
+  <data name="&gt;&gt;mainTabPage.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label9.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="label9.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 0</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>353, 45</value>
+  </data>
+  <data name="label9.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Number of track points to show</value>
+  </data>
+  <data name="label9.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;label9.Name" xml:space="preserve">
+    <value>label9</value>
+  </data>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="numberOfPointsToShowEdit.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="numberOfPointsToShowEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>362, 3</value>
+  </data>
+  <data name="numberOfPointsToShowEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 39</value>
+  </data>
+  <data name="numberOfPointsToShowEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;numberOfPointsToShowEdit.Name" xml:space="preserve">
+    <value>numberOfPointsToShowEdit</value>
+  </data>
+  <data name="&gt;&gt;numberOfPointsToShowEdit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numberOfPointsToShowEdit.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;numberOfPointsToShowEdit.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tileSizeEdit.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="tileSizeEdit.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="tileSizeEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>362, 61</value>
+  </data>
+  <data name="tileSizeEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 39</value>
+  </data>
+  <data name="tileSizeEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tileSizeEdit.Name" xml:space="preserve">
+    <value>tileSizeEdit</value>
+  </data>
+  <data name="&gt;&gt;tileSizeEdit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tileSizeEdit.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;tileSizeEdit.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label10.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="label10.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 58</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>353, 45</value>
+  </data>
+  <data name="label10.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Tile size, px</value>
+  </data>
+  <data name="label10.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
+  </data>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label11.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label11.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 103</value>
+  </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>353, 178</value>
+  </data>
+  <data name="label11.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>Tile servers</value>
+  </data>
+  <data name="label11.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="&gt;&gt;label11.Name" xml:space="preserve">
+    <value>label11</value>
+  </data>
+  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tileServersTxb.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="tileServersTxb.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Consolas, 12pt</value>
+  </data>
+  <data name="tileServersTxb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>362, 106</value>
+  </data>
+  <data name="tileServersTxb.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tileServersTxb.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Both</value>
+  </data>
+  <data name="tileServersTxb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>379, 172</value>
+  </data>
+  <data name="tileServersTxb.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="tileServersTxb.Text" xml:space="preserve">
+    <value>https://a.tile.openstreetmap.org
+https://b.tile.openstreetmap.org
+https://c.tile.openstreetmap.org</value>
+  </data>
+  <data name="&gt;&gt;tileServersTxb.Name" xml:space="preserve">
+    <value>tileServersTxb</value>
+  </data>
+  <data name="&gt;&gt;tileServersTxb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tileServersTxb.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;tileServersTxb.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label12.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label12.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 281</value>
+  </data>
+  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>353, 32</value>
+  </data>
+  <data name="label12.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>Enable tile download</value>
+  </data>
+  <data name="label12.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;label12.Name" xml:space="preserve">
+    <value>label12</value>
+  </data>
+  <data name="&gt;&gt;label12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="enableTileDonwloadChb.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="enableTileDonwloadChb.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="enableTileDonwloadChb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>362, 284</value>
+  </data>
+  <data name="enableTileDonwloadChb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>379, 26</value>
+  </data>
+  <data name="enableTileDonwloadChb.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;enableTileDonwloadChb.Name" xml:space="preserve">
+    <value>enableTileDonwloadChb</value>
+  </data>
+  <data name="&gt;&gt;enableTileDonwloadChb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;enableTileDonwloadChb.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;enableTileDonwloadChb.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="rwlt_ModeLbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rwlt_ModeLbl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="rwlt_ModeLbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 313</value>
+  </data>
+  <data name="rwlt_ModeLbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>353, 46</value>
+  </data>
+  <data name="rwlt_ModeLbl.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="rwlt_ModeLbl.Text" xml:space="preserve">
+    <value>RWLT Mode⚠</value>
+  </data>
+  <data name="rwlt_ModeLbl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="rwlt_ModeLbl.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;rwlt_ModeLbl.Name" xml:space="preserve">
+    <value>rwlt_ModeLbl</value>
+  </data>
+  <data name="&gt;&gt;rwlt_ModeLbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rwlt_ModeLbl.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;rwlt_ModeLbl.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="rwlt_modeCbx.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="rwlt_modeCbx.Items" xml:space="preserve">
+    <value>Pinger</value>
+  </data>
+  <data name="rwlt_modeCbx.Items1" xml:space="preserve">
+    <value>Divers</value>
+  </data>
+  <data name="rwlt_modeCbx.Location" type="System.Drawing.Point, System.Drawing">
+    <value>362, 316</value>
+  </data>
+  <data name="rwlt_modeCbx.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 40</value>
+  </data>
+  <data name="rwlt_modeCbx.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="rwlt_modeCbx.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;rwlt_modeCbx.Name" xml:space="preserve">
+    <value>rwlt_modeCbx</value>
+  </data>
+  <data name="&gt;&gt;rwlt_modeCbx.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rwlt_modeCbx.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;rwlt_modeCbx.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="rwltPingerDRatingLbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rwltPingerDRatingLbl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="rwltPingerDRatingLbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 359</value>
+  </data>
+  <data name="rwltPingerDRatingLbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>353, 46</value>
+  </data>
+  <data name="rwltPingerDRatingLbl.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="rwltPingerDRatingLbl.Text" xml:space="preserve">
+    <value>RWLT Pinger depth rating⚠</value>
+  </data>
+  <data name="rwltPingerDRatingLbl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="rwltPingerDRatingLbl.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;rwltPingerDRatingLbl.Name" xml:space="preserve">
+    <value>rwltPingerDRatingLbl</value>
+  </data>
+  <data name="&gt;&gt;rwltPingerDRatingLbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rwltPingerDRatingLbl.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;rwltPingerDRatingLbl.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="rwlt_dratingCbx.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="rwlt_dratingCbx.Items" xml:space="preserve">
+    <value>30 Bar</value>
+  </data>
+  <data name="rwlt_dratingCbx.Items1" xml:space="preserve">
+    <value>50 Bar</value>
+  </data>
+  <data name="rwlt_dratingCbx.Items2" xml:space="preserve">
+    <value>100 Bar</value>
+  </data>
+  <data name="rwlt_dratingCbx.Location" type="System.Drawing.Point, System.Drawing">
+    <value>362, 362</value>
+  </data>
+  <data name="rwlt_dratingCbx.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 40</value>
+  </data>
+  <data name="rwlt_dratingCbx.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="rwlt_dratingCbx.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;rwlt_dratingCbx.Name" xml:space="preserve">
+    <value>rwlt_dratingCbx</value>
+  </data>
+  <data name="&gt;&gt;rwlt_dratingCbx.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rwlt_dratingCbx.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;rwlt_dratingCbx.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="tableLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>744, 410</value>
+  </data>
+  <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Name" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
+    <value>extraTabPage</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="label9" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="numberOfPointsToShowEdit" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="tileSizeEdit" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label10" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label11" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tileServersTxb" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label12" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="enableTileDonwloadChb" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="rwlt_ModeLbl" Row="6" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="rwlt_modeCbx" Row="6" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="rwltPingerDRatingLbl" Row="7" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="rwlt_dratingCbx" Row="7" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,Percent,100" /&gt;&lt;Rows Styles="AutoSize,0,Absolute,13,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="extraTabPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 41</value>
+  </data>
+  <data name="extraTabPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="extraTabPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>750, 416</value>
+  </data>
+  <data name="extraTabPage.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="extraTabPage.Text" xml:space="preserve">
+    <value>🛸 EXTRA</value>
+  </data>
+  <data name="&gt;&gt;extraTabPage.Name" xml:space="preserve">
+    <value>extraTabPage</value>
+  </data>
+  <data name="&gt;&gt;extraTabPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;extraTabPage.Parent" xml:space="preserve">
+    <value>mainTabControl</value>
+  </data>
+  <data name="&gt;&gt;extraTabPage.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="mainTabControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="mainTabControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>758, 461</value>
+  </data>
+  <data name="mainTabControl.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;mainTabControl.Name" xml:space="preserve">
+    <value>mainTabControl</value>
+  </data>
+  <data name="&gt;&gt;mainTabControl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mainTabControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;mainTabControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="physicsTable.ColumnCount" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>physicsTable</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>physicsTable</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>physicsTable</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;salinityEdit.Name" xml:space="preserve">
+    <value>salinityEdit</value>
+  </data>
+  <data name="&gt;&gt;salinityEdit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;salinityEdit.Parent" xml:space="preserve">
+    <value>physicsTable</value>
+  </data>
+  <data name="&gt;&gt;salinityEdit.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;waterTemperatureEdit.Name" xml:space="preserve">
+    <value>waterTemperatureEdit</value>
+  </data>
+  <data name="&gt;&gt;waterTemperatureEdit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;waterTemperatureEdit.Parent" xml:space="preserve">
+    <value>physicsTable</value>
+  </data>
+  <data name="&gt;&gt;waterTemperatureEdit.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;speedOfSoundEdit.Name" xml:space="preserve">
+    <value>speedOfSoundEdit</value>
+  </data>
+  <data name="&gt;&gt;speedOfSoundEdit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;speedOfSoundEdit.Parent" xml:space="preserve">
+    <value>physicsTable</value>
+  </data>
+  <data name="&gt;&gt;speedOfSoundEdit.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;isAutoSalinityChb.Name" xml:space="preserve">
+    <value>isAutoSalinityChb</value>
+  </data>
+  <data name="&gt;&gt;isAutoSalinityChb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;isAutoSalinityChb.Parent" xml:space="preserve">
+    <value>physicsTable</value>
+  </data>
+  <data name="&gt;&gt;isAutoSalinityChb.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;isAutoSoundSpeedChb.Name" xml:space="preserve">
+    <value>isAutoSoundSpeedChb</value>
+  </data>
+  <data name="&gt;&gt;isAutoSoundSpeedChb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;isAutoSoundSpeedChb.Parent" xml:space="preserve">
+    <value>physicsTable</value>
+  </data>
+  <data name="&gt;&gt;isAutoSoundSpeedChb.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;salinityFromDbBtn.Name" xml:space="preserve">
+    <value>salinityFromDbBtn</value>
+  </data>
+  <data name="&gt;&gt;salinityFromDbBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;salinityFromDbBtn.Parent" xml:space="preserve">
+    <value>physicsTable</value>
+  </data>
+  <data name="&gt;&gt;salinityFromDbBtn.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>physicsTable</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;targetMaxSpeedEdit.Name" xml:space="preserve">
+    <value>targetMaxSpeedEdit</value>
+  </data>
+  <data name="&gt;&gt;targetMaxSpeedEdit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;targetMaxSpeedEdit.Parent" xml:space="preserve">
+    <value>physicsTable</value>
+  </data>
+  <data name="&gt;&gt;targetMaxSpeedEdit.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>physicsTable</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>physicsTable</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;sThresholdEdit.Name" xml:space="preserve">
+    <value>sThresholdEdit</value>
+  </data>
+  <data name="&gt;&gt;sThresholdEdit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sThresholdEdit.Parent" xml:space="preserve">
+    <value>physicsTable</value>
+  </data>
+  <data name="&gt;&gt;sThresholdEdit.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;sFIFOSizeEdit.Name" xml:space="preserve">
+    <value>sFIFOSizeEdit</value>
+  </data>
+  <data name="&gt;&gt;sFIFOSizeEdit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sFIFOSizeEdit.Parent" xml:space="preserve">
+    <value>physicsTable</value>
+  </data>
+  <data name="&gt;&gt;sFIFOSizeEdit.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>physicsTable</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;dhThresholdEdit.Name" xml:space="preserve">
+    <value>dhThresholdEdit</value>
+  </data>
+  <data name="&gt;&gt;dhThresholdEdit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dhThresholdEdit.Parent" xml:space="preserve">
+    <value>physicsTable</value>
+  </data>
+  <data name="&gt;&gt;dhThresholdEdit.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;dhFIFOSizeEdit.Name" xml:space="preserve">
+    <value>dhFIFOSizeEdit</value>
+  </data>
+  <data name="&gt;&gt;dhFIFOSizeEdit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dhFIFOSizeEdit.Parent" xml:space="preserve">
+    <value>physicsTable</value>
+  </data>
+  <data name="&gt;&gt;dhFIFOSizeEdit.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>physicsTable</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;cFIFOSizeEdit.Name" xml:space="preserve">
+    <value>cFIFOSizeEdit</value>
+  </data>
+  <data name="&gt;&gt;cFIFOSizeEdit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cFIFOSizeEdit.Parent" xml:space="preserve">
+    <value>physicsTable</value>
+  </data>
+  <data name="&gt;&gt;cFIFOSizeEdit.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;label13.Name" xml:space="preserve">
+    <value>label13</value>
+  </data>
+  <data name="&gt;&gt;label13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
+    <value>physicsTable</value>
+  </data>
+  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="physicsTable.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="physicsTable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="physicsTable.RowCount" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="physicsTable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>744, 410</value>
+  </data>
+  <data name="physicsTable.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;physicsTable.Name" xml:space="preserve">
+    <value>physicsTable</value>
+  </data>
+  <data name="&gt;&gt;physicsTable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;physicsTable.Parent" xml:space="preserve">
+    <value>physicsTabPage</value>
+  </data>
+  <data name="&gt;&gt;physicsTable.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="physicsTable.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="label1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label2" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label3" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="salinityEdit" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="waterTemperatureEdit" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="speedOfSoundEdit" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="isAutoSalinityChb" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="isAutoSoundSpeedChb" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="salinityFromDbBtn" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="label4" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="targetMaxSpeedEdit" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label5" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label6" Row="6" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="sThresholdEdit" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="sFIFOSizeEdit" Row="6" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label7" Row="7" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="dhThresholdEdit" Row="7" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="dhFIFOSizeEdit" Row="8" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label8" Row="9" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="cFIFOSizeEdit" Row="9" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label13" Row="8" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0" /&gt;&lt;Rows Styles="AutoSize,0,AutoSize,0,AutoSize,0,Absolute,20,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 0</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>318, 45</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Salinity, PSU</value>
+  </data>
+  <data name="label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>physicsTable</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 45</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>318, 45</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Water temperature, °C</value>
+  </data>
+  <data name="label2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>physicsTable</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 90</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>318, 45</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Speed of sound, m/s</value>
+  </data>
+  <data name="label3.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>physicsTable</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="salinityEdit.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="salinityEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>327, 3</value>
+  </data>
+  <data name="salinityEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 39</value>
+  </data>
+  <data name="salinityEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;salinityEdit.Name" xml:space="preserve">
+    <value>salinityEdit</value>
+  </data>
+  <data name="&gt;&gt;salinityEdit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;salinityEdit.Parent" xml:space="preserve">
+    <value>physicsTable</value>
+  </data>
+  <data name="&gt;&gt;salinityEdit.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="waterTemperatureEdit.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="waterTemperatureEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>327, 48</value>
+  </data>
+  <data name="waterTemperatureEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 39</value>
+  </data>
+  <data name="waterTemperatureEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;waterTemperatureEdit.Name" xml:space="preserve">
+    <value>waterTemperatureEdit</value>
+  </data>
+  <data name="&gt;&gt;waterTemperatureEdit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;waterTemperatureEdit.Parent" xml:space="preserve">
+    <value>physicsTable</value>
+  </data>
+  <data name="&gt;&gt;waterTemperatureEdit.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="speedOfSoundEdit.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="speedOfSoundEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>327, 93</value>
+  </data>
+  <data name="speedOfSoundEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 39</value>
+  </data>
+  <data name="speedOfSoundEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;speedOfSoundEdit.Name" xml:space="preserve">
+    <value>speedOfSoundEdit</value>
+  </data>
+  <data name="&gt;&gt;speedOfSoundEdit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;speedOfSoundEdit.Parent" xml:space="preserve">
+    <value>physicsTable</value>
+  </data>
+  <data name="&gt;&gt;speedOfSoundEdit.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="isAutoSalinityChb.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="isAutoSalinityChb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>479, 3</value>
+  </data>
+  <data name="isAutoSalinityChb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 36</value>
+  </data>
+  <data name="isAutoSalinityChb.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="isAutoSalinityChb.Text" xml:space="preserve">
+    <value>Auto</value>
+  </data>
+  <data name="&gt;&gt;isAutoSalinityChb.Name" xml:space="preserve">
+    <value>isAutoSalinityChb</value>
+  </data>
+  <data name="&gt;&gt;isAutoSalinityChb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;isAutoSalinityChb.Parent" xml:space="preserve">
+    <value>physicsTable</value>
+  </data>
+  <data name="&gt;&gt;isAutoSalinityChb.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="isAutoSoundSpeedChb.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="isAutoSoundSpeedChb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>479, 93</value>
+  </data>
+  <data name="isAutoSoundSpeedChb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 36</value>
+  </data>
+  <data name="isAutoSoundSpeedChb.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="isAutoSoundSpeedChb.Text" xml:space="preserve">
+    <value>Auto</value>
+  </data>
+  <data name="&gt;&gt;isAutoSoundSpeedChb.Name" xml:space="preserve">
+    <value>isAutoSoundSpeedChb</value>
+  </data>
+  <data name="&gt;&gt;isAutoSoundSpeedChb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;isAutoSoundSpeedChb.Parent" xml:space="preserve">
+    <value>physicsTable</value>
+  </data>
+  <data name="&gt;&gt;isAutoSoundSpeedChb.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="salinityFromDbBtn.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="salinityFromDbBtn.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="salinityFromDbBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>576, 0</value>
+  </data>
+  <data name="salinityFromDbBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 45</value>
+  </data>
+  <data name="salinityFromDbBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="salinityFromDbBtn.Text" xml:space="preserve">
+    <value>🔎</value>
+  </data>
+  <data name="salinityFromDbBtn.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;salinityFromDbBtn.Name" xml:space="preserve">
+    <value>salinityFromDbBtn</value>
+  </data>
+  <data name="&gt;&gt;salinityFromDbBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;salinityFromDbBtn.Parent" xml:space="preserve">
+    <value>physicsTable</value>
+  </data>
+  <data name="&gt;&gt;salinityFromDbBtn.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 155</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>318, 45</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Target max speed, m/s</value>
+  </data>
+  <data name="label4.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>physicsTable</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="targetMaxSpeedEdit.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="targetMaxSpeedEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>327, 158</value>
+  </data>
+  <data name="targetMaxSpeedEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 39</value>
+  </data>
+  <data name="targetMaxSpeedEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;targetMaxSpeedEdit.Name" xml:space="preserve">
+    <value>targetMaxSpeedEdit</value>
+  </data>
+  <data name="&gt;&gt;targetMaxSpeedEdit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;targetMaxSpeedEdit.Parent" xml:space="preserve">
+    <value>physicsTable</value>
+  </data>
+  <data name="&gt;&gt;targetMaxSpeedEdit.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 200</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>318, 45</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>S-filter range threshold, m</value>
+  </data>
+  <data name="label5.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>physicsTable</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label6.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 245</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>318, 45</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>S-filter FIFO size</value>
+  </data>
+  <data name="label6.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>physicsTable</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="sThresholdEdit.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="sThresholdEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>327, 203</value>
+  </data>
+  <data name="sThresholdEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 39</value>
+  </data>
+  <data name="sThresholdEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;sThresholdEdit.Name" xml:space="preserve">
+    <value>sThresholdEdit</value>
+  </data>
+  <data name="&gt;&gt;sThresholdEdit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sThresholdEdit.Parent" xml:space="preserve">
+    <value>physicsTable</value>
+  </data>
+  <data name="&gt;&gt;sThresholdEdit.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="sFIFOSizeEdit.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="sFIFOSizeEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>327, 248</value>
+  </data>
+  <data name="sFIFOSizeEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 39</value>
+  </data>
+  <data name="sFIFOSizeEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;sFIFOSizeEdit.Name" xml:space="preserve">
+    <value>sFIFOSizeEdit</value>
+  </data>
+  <data name="&gt;&gt;sFIFOSizeEdit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sFIFOSizeEdit.Parent" xml:space="preserve">
+    <value>physicsTable</value>
+  </data>
+  <data name="&gt;&gt;sFIFOSizeEdit.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label7.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 290</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>318, 45</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>DH-filter range threshold, m</value>
+  </data>
+  <data name="label7.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>physicsTable</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="dhThresholdEdit.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dhThresholdEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>327, 293</value>
+  </data>
+  <data name="dhThresholdEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 39</value>
+  </data>
+  <data name="dhThresholdEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;dhThresholdEdit.Name" xml:space="preserve">
+    <value>dhThresholdEdit</value>
+  </data>
+  <data name="&gt;&gt;dhThresholdEdit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dhThresholdEdit.Parent" xml:space="preserve">
+    <value>physicsTable</value>
+  </data>
+  <data name="&gt;&gt;dhThresholdEdit.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="dhFIFOSizeEdit.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dhFIFOSizeEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>327, 338</value>
+  </data>
+  <data name="dhFIFOSizeEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 39</value>
+  </data>
+  <data name="dhFIFOSizeEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;dhFIFOSizeEdit.Name" xml:space="preserve">
+    <value>dhFIFOSizeEdit</value>
+  </data>
+  <data name="&gt;&gt;dhFIFOSizeEdit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dhFIFOSizeEdit.Parent" xml:space="preserve">
+    <value>physicsTable</value>
+  </data>
+  <data name="&gt;&gt;dhFIFOSizeEdit.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label8.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 380</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>318, 45</value>
+  </data>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Course estimation by, points</value>
+  </data>
+  <data name="label8.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>physicsTable</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="cFIFOSizeEdit.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="cFIFOSizeEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>327, 383</value>
+  </data>
+  <data name="cFIFOSizeEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 39</value>
+  </data>
+  <data name="cFIFOSizeEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;cFIFOSizeEdit.Name" xml:space="preserve">
+    <value>cFIFOSizeEdit</value>
+  </data>
+  <data name="&gt;&gt;cFIFOSizeEdit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cFIFOSizeEdit.Parent" xml:space="preserve">
+    <value>physicsTable</value>
+  </data>
+  <data name="&gt;&gt;cFIFOSizeEdit.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="label13.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label13.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 335</value>
+  </data>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>318, 45</value>
+  </data>
+  <data name="label13.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>DH-filter FIFO size</value>
+  </data>
+  <data name="label13.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;label13.Name" xml:space="preserve">
+    <value>label13</value>
+  </data>
+  <data name="&gt;&gt;label13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
+    <value>physicsTable</value>
+  </data>
+  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="tableLayoutPanel2.ColumnCount" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;outportBaudrateCbx.Name" xml:space="preserve">
+    <value>outportBaudrateCbx</value>
+  </data>
+  <data name="&gt;&gt;outportBaudrateCbx.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;outportBaudrateCbx.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;outportBaudrateCbx.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;inportBaudrateCbx.Name" xml:space="preserve">
+    <value>inportBaudrateCbx</value>
+  </data>
+  <data name="&gt;&gt;inportBaudrateCbx.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;inportBaudrateCbx.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;inportBaudrateCbx.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label14.Name" xml:space="preserve">
+    <value>label14</value>
+  </data>
+  <data name="&gt;&gt;label14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label14.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label15.Name" xml:space="preserve">
+    <value>label15</value>
+  </data>
+  <data name="&gt;&gt;label15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label15.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tableLayoutPanel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tableLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="tableLayoutPanel2.RowCount" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>744, 410</value>
+  </data>
+  <data name="tableLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Name" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Parent" xml:space="preserve">
+    <value>mainTabPage</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="outportBaudrateCbx" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="inportBaudrateCbx" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label14" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label15" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,AutoSize,0,AutoSize,0" /&gt;&lt;Rows Styles="AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="outportBaudrateCbx.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="outportBaudrateCbx.Location" type="System.Drawing.Point, System.Drawing">
+    <value>313, 49</value>
+  </data>
+  <data name="outportBaudrateCbx.Size" type="System.Drawing.Size, System.Drawing">
+    <value>242, 40</value>
+  </data>
+  <data name="outportBaudrateCbx.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;outportBaudrateCbx.Name" xml:space="preserve">
+    <value>outportBaudrateCbx</value>
+  </data>
+  <data name="&gt;&gt;outportBaudrateCbx.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;outportBaudrateCbx.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;outportBaudrateCbx.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="inportBaudrateCbx.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="inportBaudrateCbx.Location" type="System.Drawing.Point, System.Drawing">
+    <value>313, 3</value>
+  </data>
+  <data name="inportBaudrateCbx.Size" type="System.Drawing.Size, System.Drawing">
+    <value>242, 40</value>
+  </data>
+  <data name="inportBaudrateCbx.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;inportBaudrateCbx.Name" xml:space="preserve">
+    <value>inportBaudrateCbx</value>
+  </data>
+  <data name="&gt;&gt;inportBaudrateCbx.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;inportBaudrateCbx.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;inportBaudrateCbx.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label14.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label14.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 0</value>
+  </data>
+  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>304, 46</value>
+  </data>
+  <data name="label14.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>Input port baudrate</value>
+  </data>
+  <data name="label14.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;label14.Name" xml:space="preserve">
+    <value>label14</value>
+  </data>
+  <data name="&gt;&gt;label14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label14.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label15.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label15.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 46</value>
+  </data>
+  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>304, 46</value>
+  </data>
+  <data name="label15.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>Serial bypass port baudrate</value>
+  </data>
+  <data name="label15.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;label15.Name" xml:space="preserve">
+    <value>label15</value>
+  </data>
+  <data name="&gt;&gt;label15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label15.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>13, 32</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>782, 553</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>800, 600</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>SettingsEditor</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>SettingsEditor</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>
