@@ -48,6 +48,7 @@
             this.utilsBtn = new System.Windows.Forms.ToolStripDropDownButton();
             this.toolStripSeparator24 = new System.Windows.Forms.ToolStripSeparator();
             this.deviceInfoViewBtn = new System.Windows.Forms.ToolStripMenuItem();
+            this.rwltGIBSettingsEditorBtn = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator25 = new System.Windows.Forms.ToolStripSeparator();
             this.utilstrackUtilsBtn = new System.Windows.Forms.ToolStripMenuItem();
             this.utilsTrackUtilsSmoothMAVBtn = new System.Windows.Forms.ToolStripMenuItem();
@@ -179,30 +180,31 @@
             // 
             // linkBtn
             // 
-            this.linkBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             resources.ApplyResources(this.linkBtn, "linkBtn");
+            this.linkBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.linkBtn.Name = "linkBtn";
             this.linkBtn.Click += new System.EventHandler(this.linkBtn_Click);
             // 
             // toolStripSeparator1
             // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
             resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
             // 
             // settingsBtn
             // 
-            this.settingsBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             resources.ApplyResources(this.settingsBtn, "settingsBtn");
+            this.settingsBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.settingsBtn.Name = "settingsBtn";
             this.settingsBtn.Click += new System.EventHandler(this.settingsBtn_Click);
             // 
             // toolStripSeparator2
             // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
             resources.ApplyResources(this.toolStripSeparator2, "toolStripSeparator2");
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
             // 
             // logBtn
             // 
+            resources.ApplyResources(this.logBtn, "logBtn");
             this.logBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.logBtn.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.logOpenCurrentBtn,
@@ -213,7 +215,6 @@
             this.toolStripSeparator22,
             this.logDeleteAllEntriesBtn,
             this.logDoThemAllBtn});
-            resources.ApplyResources(this.logBtn, "logBtn");
             this.logBtn.Name = "logBtn";
             // 
             // logOpenCurrentBtn
@@ -230,8 +231,8 @@
             // 
             // toolStripSeparator21
             // 
-            this.toolStripSeparator21.Name = "toolStripSeparator21";
             resources.ApplyResources(this.toolStripSeparator21, "toolStripSeparator21");
+            this.toolStripSeparator21.Name = "toolStripSeparator21";
             // 
             // logClearEmptyEntriesBtn
             // 
@@ -247,8 +248,8 @@
             // 
             // toolStripSeparator22
             // 
-            this.toolStripSeparator22.Name = "toolStripSeparator22";
             resources.ApplyResources(this.toolStripSeparator22, "toolStripSeparator22");
+            this.toolStripSeparator22.Name = "toolStripSeparator22";
             // 
             // logDeleteAllEntriesBtn
             // 
@@ -264,24 +265,25 @@
             // 
             // toolStripSeparator3
             // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
             resources.ApplyResources(this.toolStripSeparator3, "toolStripSeparator3");
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
             // 
             // utilsBtn
             // 
+            resources.ApplyResources(this.utilsBtn, "utilsBtn");
             this.utilsBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.utilsBtn.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripSeparator24,
             this.deviceInfoViewBtn,
+            this.rwltGIBSettingsEditorBtn,
             this.toolStripSeparator25,
             this.utilstrackUtilsBtn});
-            resources.ApplyResources(this.utilsBtn, "utilsBtn");
             this.utilsBtn.Name = "utilsBtn";
             // 
             // toolStripSeparator24
             // 
-            this.toolStripSeparator24.Name = "toolStripSeparator24";
             resources.ApplyResources(this.toolStripSeparator24, "toolStripSeparator24");
+            this.toolStripSeparator24.Name = "toolStripSeparator24";
             // 
             // deviceInfoViewBtn
             // 
@@ -289,65 +291,71 @@
             this.deviceInfoViewBtn.Name = "deviceInfoViewBtn";
             this.deviceInfoViewBtn.Click += new System.EventHandler(this.deviceInfoViewBtn_Click);
             // 
+            // rwltGIBSettingsEditorBtn
+            // 
+            resources.ApplyResources(this.rwltGIBSettingsEditorBtn, "rwltGIBSettingsEditorBtn");
+            this.rwltGIBSettingsEditorBtn.Name = "rwltGIBSettingsEditorBtn";
+            this.rwltGIBSettingsEditorBtn.Click += new System.EventHandler(this.rwltGIBSettingsEditorBtn_Click);
+            // 
             // toolStripSeparator25
             // 
-            this.toolStripSeparator25.Name = "toolStripSeparator25";
             resources.ApplyResources(this.toolStripSeparator25, "toolStripSeparator25");
+            this.toolStripSeparator25.Name = "toolStripSeparator25";
             // 
             // utilstrackUtilsBtn
             // 
+            resources.ApplyResources(this.utilstrackUtilsBtn, "utilstrackUtilsBtn");
             this.utilstrackUtilsBtn.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.utilsTrackUtilsSmoothMAVBtn,
             this.utilsTrackUtilsMedianBtn,
             this.toolStripSeparator26,
             this.utilsTrackUtilsShiftByXYBtn});
-            resources.ApplyResources(this.utilstrackUtilsBtn, "utilstrackUtilsBtn");
             this.utilstrackUtilsBtn.Name = "utilstrackUtilsBtn";
             // 
             // utilsTrackUtilsSmoothMAVBtn
             // 
-            this.utilsTrackUtilsSmoothMAVBtn.Name = "utilsTrackUtilsSmoothMAVBtn";
             resources.ApplyResources(this.utilsTrackUtilsSmoothMAVBtn, "utilsTrackUtilsSmoothMAVBtn");
+            this.utilsTrackUtilsSmoothMAVBtn.Name = "utilsTrackUtilsSmoothMAVBtn";
             this.utilsTrackUtilsSmoothMAVBtn.Click += new System.EventHandler(this.utilsTrackUtilsSmoothMAVBtn_Click);
             // 
             // utilsTrackUtilsMedianBtn
             // 
-            this.utilsTrackUtilsMedianBtn.Name = "utilsTrackUtilsMedianBtn";
             resources.ApplyResources(this.utilsTrackUtilsMedianBtn, "utilsTrackUtilsMedianBtn");
+            this.utilsTrackUtilsMedianBtn.Name = "utilsTrackUtilsMedianBtn";
             this.utilsTrackUtilsMedianBtn.Click += new System.EventHandler(this.utilsTrackUtilsMedianBtn_Click);
             // 
             // toolStripSeparator26
             // 
-            this.toolStripSeparator26.Name = "toolStripSeparator26";
             resources.ApplyResources(this.toolStripSeparator26, "toolStripSeparator26");
+            this.toolStripSeparator26.Name = "toolStripSeparator26";
             // 
             // utilsTrackUtilsShiftByXYBtn
             // 
-            this.utilsTrackUtilsShiftByXYBtn.Name = "utilsTrackUtilsShiftByXYBtn";
             resources.ApplyResources(this.utilsTrackUtilsShiftByXYBtn, "utilsTrackUtilsShiftByXYBtn");
+            this.utilsTrackUtilsShiftByXYBtn.Name = "utilsTrackUtilsShiftByXYBtn";
             this.utilsTrackUtilsShiftByXYBtn.Click += new System.EventHandler(this.utilsTrackUtilsShiftByXYBtn_Click);
             // 
             // toolStripSeparator4
             // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
             resources.ApplyResources(this.toolStripSeparator4, "toolStripSeparator4");
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
             // 
             // infoBtn
             // 
+            resources.ApplyResources(this.infoBtn, "infoBtn");
             this.infoBtn.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.infoBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            resources.ApplyResources(this.infoBtn, "infoBtn");
             this.infoBtn.Name = "infoBtn";
             this.infoBtn.Click += new System.EventHandler(this.infoBtn_Click);
             // 
             // tracksBtn
             // 
+            resources.ApplyResources(this.tracksBtn, "tracksBtn");
             this.tracksBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.tracksBtn.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tracksExportAsBtn,
             this.toolStripSeparator23,
             this.tracksClearAllBtn});
-            resources.ApplyResources(this.tracksBtn, "tracksBtn");
             this.tracksBtn.Name = "tracksBtn";
             // 
             // tracksExportAsBtn
@@ -358,8 +366,8 @@
             // 
             // toolStripSeparator23
             // 
-            this.toolStripSeparator23.Name = "toolStripSeparator23";
             resources.ApplyResources(this.toolStripSeparator23, "toolStripSeparator23");
+            this.toolStripSeparator23.Name = "toolStripSeparator23";
             // 
             // tracksClearAllBtn
             // 
@@ -403,154 +411,154 @@
             // 
             // markCurrentLocationBtn
             // 
-            this.markCurrentLocationBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             resources.ApplyResources(this.markCurrentLocationBtn, "markCurrentLocationBtn");
+            this.markCurrentLocationBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.markCurrentLocationBtn.Name = "markCurrentLocationBtn";
             this.markCurrentLocationBtn.Click += new System.EventHandler(this.markCurrentLocationBtn_Click);
             // 
             // toolStripSeparator5
             // 
-            this.toolStripSeparator5.Name = "toolStripSeparator5";
             resources.ApplyResources(this.toolStripSeparator5, "toolStripSeparator5");
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
             // 
             // markedPointsVisibleBtn
             // 
-            this.markedPointsVisibleBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             resources.ApplyResources(this.markedPointsVisibleBtn, "markedPointsVisibleBtn");
+            this.markedPointsVisibleBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.markedPointsVisibleBtn.Name = "markedPointsVisibleBtn";
             this.markedPointsVisibleBtn.Click += new System.EventHandler(this.markedPointsVisibleBtn_Click);
             // 
             // toolStripSeparator6
             // 
-            this.toolStripSeparator6.Name = "toolStripSeparator6";
             resources.ApplyResources(this.toolStripSeparator6, "toolStripSeparator6");
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
             // 
             // basePointsVisibleBtn
             // 
-            this.basePointsVisibleBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             resources.ApplyResources(this.basePointsVisibleBtn, "basePointsVisibleBtn");
+            this.basePointsVisibleBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.basePointsVisibleBtn.Name = "basePointsVisibleBtn";
             this.basePointsVisibleBtn.Click += new System.EventHandler(this.basePointsVisibleBtn_Click);
             // 
             // toolStripSeparator7
             // 
-            this.toolStripSeparator7.Name = "toolStripSeparator7";
             resources.ApplyResources(this.toolStripSeparator7, "toolStripSeparator7");
+            this.toolStripSeparator7.Name = "toolStripSeparator7";
             // 
             // historyLogVisibleBtn
             // 
-            this.historyLogVisibleBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             resources.ApplyResources(this.historyLogVisibleBtn, "historyLogVisibleBtn");
+            this.historyLogVisibleBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.historyLogVisibleBtn.Name = "historyLogVisibleBtn";
             this.historyLogVisibleBtn.Click += new System.EventHandler(this.historyLogVisibleBtn_Click);
             // 
             // toolStripSeparator8
             // 
-            this.toolStripSeparator8.Name = "toolStripSeparator8";
             resources.ApplyResources(this.toolStripSeparator8, "toolStripSeparator8");
+            this.toolStripSeparator8.Name = "toolStripSeparator8";
             // 
             // legendVisibleBtn
             // 
-            this.legendVisibleBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             resources.ApplyResources(this.legendVisibleBtn, "legendVisibleBtn");
+            this.legendVisibleBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.legendVisibleBtn.Name = "legendVisibleBtn";
             this.legendVisibleBtn.Click += new System.EventHandler(this.legendVisibleBtn_Click);
             // 
             // toolStripSeparator9
             // 
-            this.toolStripSeparator9.Name = "toolStripSeparator9";
             resources.ApplyResources(this.toolStripSeparator9, "toolStripSeparator9");
+            this.toolStripSeparator9.Name = "toolStripSeparator9";
             // 
             // notesVisibleBtn
             // 
-            this.notesVisibleBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             resources.ApplyResources(this.notesVisibleBtn, "notesVisibleBtn");
+            this.notesVisibleBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.notesVisibleBtn.Name = "notesVisibleBtn";
             this.notesVisibleBtn.Click += new System.EventHandler(this.notesVisibleBtn_Click);
             // 
             // toolStripSeparator10
             // 
-            this.toolStripSeparator10.Name = "toolStripSeparator10";
             resources.ApplyResources(this.toolStripSeparator10, "toolStripSeparator10");
+            this.toolStripSeparator10.Name = "toolStripSeparator10";
             // 
             // extraInfoVisibleBtn
             // 
-            this.extraInfoVisibleBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             resources.ApplyResources(this.extraInfoVisibleBtn, "extraInfoVisibleBtn");
+            this.extraInfoVisibleBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.extraInfoVisibleBtn.Name = "extraInfoVisibleBtn";
             this.extraInfoVisibleBtn.Click += new System.EventHandler(this.extraInfoVisibleBtn_Click);
             // 
             // toolStripSeparator11
             // 
-            this.toolStripSeparator11.Name = "toolStripSeparator11";
             resources.ApplyResources(this.toolStripSeparator11, "toolStripSeparator11");
+            this.toolStripSeparator11.Name = "toolStripSeparator11";
             // 
             // clearViewBtn
             // 
-            this.clearViewBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             resources.ApplyResources(this.clearViewBtn, "clearViewBtn");
+            this.clearViewBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.clearViewBtn.Name = "clearViewBtn";
             this.clearViewBtn.Click += new System.EventHandler(this.clearViewBtn_Click);
             // 
             // toolStripSeparator12
             // 
-            this.toolStripSeparator12.Name = "toolStripSeparator12";
             resources.ApplyResources(this.toolStripSeparator12, "toolStripSeparator12");
+            this.toolStripSeparator12.Name = "toolStripSeparator12";
             // 
             // statisticsBtn
             // 
+            resources.ApplyResources(this.statisticsBtn, "statisticsBtn");
             this.statisticsBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.statisticsBtn.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.statStartStopBtn,
             this.statResetBtn});
-            resources.ApplyResources(this.statisticsBtn, "statisticsBtn");
             this.statisticsBtn.Name = "statisticsBtn";
             // 
             // statStartStopBtn
             // 
-            this.statStartStopBtn.Name = "statStartStopBtn";
             resources.ApplyResources(this.statStartStopBtn, "statStartStopBtn");
+            this.statStartStopBtn.Name = "statStartStopBtn";
             this.statStartStopBtn.Click += new System.EventHandler(this.statStartStopBtn_Click);
             // 
             // statResetBtn
             // 
-            this.statResetBtn.Name = "statResetBtn";
             resources.ApplyResources(this.statResetBtn, "statResetBtn");
+            this.statResetBtn.Name = "statResetBtn";
             this.statResetBtn.Click += new System.EventHandler(this.statResetBtn_Click);
             // 
             // toolStripSeparator13
             // 
-            this.toolStripSeparator13.Name = "toolStripSeparator13";
             resources.ApplyResources(this.toolStripSeparator13, "toolStripSeparator13");
+            this.toolStripSeparator13.Name = "toolStripSeparator13";
             // 
             // toolStripLabel1
             // 
-            this.toolStripLabel1.Name = "toolStripLabel1";
             resources.ApplyResources(this.toolStripLabel1, "toolStripLabel1");
+            this.toolStripLabel1.Name = "toolStripLabel1";
             // 
             // refPointCbx
             // 
-            this.refPointCbx.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             resources.ApplyResources(this.refPointCbx, "refPointCbx");
+            this.refPointCbx.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.refPointCbx.Name = "refPointCbx";
             this.refPointCbx.SelectedIndexChanged += new System.EventHandler(this.refPointCbx_SelectedIndexChanged);
             // 
             // toolStripSeparator14
             // 
-            this.toolStripSeparator14.Name = "toolStripSeparator14";
             resources.ApplyResources(this.toolStripSeparator14, "toolStripSeparator14");
+            this.toolStripSeparator14.Name = "toolStripSeparator14";
             // 
             // followTargetBtn
             // 
-            this.followTargetBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             resources.ApplyResources(this.followTargetBtn, "followTargetBtn");
+            this.followTargetBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.followTargetBtn.Name = "followTargetBtn";
             this.followTargetBtn.Click += new System.EventHandler(this.followTargetBtn_Click);
             // 
             // toolStripSeparator15
             // 
-            this.toolStripSeparator15.Name = "toolStripSeparator15";
             resources.ApplyResources(this.toolStripSeparator15, "toolStripSeparator15");
+            this.toolStripSeparator15.Name = "toolStripSeparator15";
             // 
             // showMapTilesBtn
             // 
@@ -561,20 +569,20 @@
             // 
             // toolStripSeparator16
             // 
-            this.toolStripSeparator16.Name = "toolStripSeparator16";
             resources.ApplyResources(this.toolStripSeparator16, "toolStripSeparator16");
+            this.toolStripSeparator16.Name = "toolStripSeparator16";
             // 
             // setTargetDepthBtn
             // 
-            this.setTargetDepthBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             resources.ApplyResources(this.setTargetDepthBtn, "setTargetDepthBtn");
+            this.setTargetDepthBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.setTargetDepthBtn.Name = "setTargetDepthBtn";
             this.setTargetDepthBtn.Click += new System.EventHandler(this.setTargetDepthBtn_Click);
             // 
             // setwTmpBtn
             // 
-            this.setwTmpBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             resources.ApplyResources(this.setwTmpBtn, "setwTmpBtn");
+            this.setwTmpBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.setwTmpBtn.Name = "setwTmpBtn";
             this.setwTmpBtn.Click += new System.EventHandler(this.setwTmpBtn_Click);
             // 
@@ -592,27 +600,27 @@
             // 
             // connectionStatusLbl
             // 
-            this.connectionStatusLbl.Name = "connectionStatusLbl";
             resources.ApplyResources(this.connectionStatusLbl, "connectionStatusLbl");
+            this.connectionStatusLbl.Name = "connectionStatusLbl";
             // 
             // bottomLinkLbl
             // 
+            resources.ApplyResources(this.bottomLinkLbl, "bottomLinkLbl");
             this.bottomLinkLbl.IsLink = true;
             this.bottomLinkLbl.Name = "bottomLinkLbl";
-            resources.ApplyResources(this.bottomLinkLbl, "bottomLinkLbl");
             this.bottomLinkLbl.Spring = true;
             this.bottomLinkLbl.Click += new System.EventHandler(this.bottomLinkLbl_Click);
             // 
             // moonPhaseLbl
             // 
+            resources.ApplyResources(this.moonPhaseLbl, "moonPhaseLbl");
             this.moonPhaseLbl.AutoToolTip = true;
             this.moonPhaseLbl.Name = "moonPhaseLbl";
-            resources.ApplyResources(this.moonPhaseLbl, "moonPhaseLbl");
             // 
             // toolStripStatusLabel2
             // 
-            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
             resources.ApplyResources(this.toolStripStatusLabel2, "toolStripStatusLabel2");
+            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
             // 
             // bottomToolStrip
             // 
@@ -636,32 +644,32 @@
             // 
             // addnoteBtn
             // 
-            this.addnoteBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             resources.ApplyResources(this.addnoteBtn, "addnoteBtn");
+            this.addnoteBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.addnoteBtn.Name = "addnoteBtn";
             this.addnoteBtn.Click += new System.EventHandler(this.addnoteBtn_Click);
             // 
             // toolStripSeparator17
             // 
-            this.toolStripSeparator17.Name = "toolStripSeparator17";
             resources.ApplyResources(this.toolStripSeparator17, "toolStripSeparator17");
+            this.toolStripSeparator17.Name = "toolStripSeparator17";
             // 
             // screenShotBtn
             // 
-            this.screenShotBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             resources.ApplyResources(this.screenShotBtn, "screenShotBtn");
+            this.screenShotBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.screenShotBtn.Name = "screenShotBtn";
             this.screenShotBtn.Click += new System.EventHandler(this.screenShotBtn_Click);
             // 
             // toolStripSeparator18
             // 
-            this.toolStripSeparator18.Name = "toolStripSeparator18";
             resources.ApplyResources(this.toolStripSeparator18, "toolStripSeparator18");
+            this.toolStripSeparator18.Name = "toolStripSeparator18";
             // 
             // autoscreenShotBtn
             // 
-            this.autoscreenShotBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             resources.ApplyResources(this.autoscreenShotBtn, "autoscreenShotBtn");
+            this.autoscreenShotBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.autoscreenShotBtn.Name = "autoscreenShotBtn";
             this.autoscreenShotBtn.Click += new System.EventHandler(this.autoscreenShotBtn_Click);
             // 
@@ -683,64 +691,64 @@
             // 
             // zoomInBtn
             // 
+            resources.ApplyResources(this.zoomInBtn, "zoomInBtn");
             this.zoomInBtn.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.zoomInBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            resources.ApplyResources(this.zoomInBtn, "zoomInBtn");
             this.zoomInBtn.Name = "zoomInBtn";
             this.zoomInBtn.Click += new System.EventHandler(this.zoomInBtn_Click);
             // 
             // zoomOutBtn
             // 
+            resources.ApplyResources(this.zoomOutBtn, "zoomOutBtn");
             this.zoomOutBtn.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.zoomOutBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            resources.ApplyResources(this.zoomOutBtn, "zoomOutBtn");
             this.zoomOutBtn.Name = "zoomOutBtn";
             this.zoomOutBtn.Click += new System.EventHandler(this.zoomOutBtn_Click);
             // 
             // serialBypassBtn
             // 
-            this.serialBypassBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             resources.ApplyResources(this.serialBypassBtn, "serialBypassBtn");
+            this.serialBypassBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.serialBypassBtn.Name = "serialBypassBtn";
             this.serialBypassBtn.Click += new System.EventHandler(this.serialBypassBtn_Click);
             // 
             // serialBypassPortCbx
             // 
+            resources.ApplyResources(this.serialBypassPortCbx, "serialBypassPortCbx");
             this.serialBypassPortCbx.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.serialBypassPortCbx.Name = "serialBypassPortCbx";
-            resources.ApplyResources(this.serialBypassPortCbx, "serialBypassPortCbx");
             // 
             // serialBypassPortRefreshBtn
             // 
-            this.serialBypassPortRefreshBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             resources.ApplyResources(this.serialBypassPortRefreshBtn, "serialBypassPortRefreshBtn");
+            this.serialBypassPortRefreshBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.serialBypassPortRefreshBtn.Name = "serialBypassPortRefreshBtn";
             this.serialBypassPortRefreshBtn.Click += new System.EventHandler(this.serialBypassPortRefreshBtn_Click);
             // 
             // toolStripSeparator19
             // 
-            this.toolStripSeparator19.Name = "toolStripSeparator19";
             resources.ApplyResources(this.toolStripSeparator19, "toolStripSeparator19");
+            this.toolStripSeparator19.Name = "toolStripSeparator19";
             // 
             // udpBypassBtn
             // 
-            this.udpBypassBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             resources.ApplyResources(this.udpBypassBtn, "udpBypassBtn");
+            this.udpBypassBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.udpBypassBtn.Name = "udpBypassBtn";
             this.udpBypassBtn.Click += new System.EventHandler(this.udpBypassBtn_Click);
             // 
             // udpBypassAddrPortTxb
             // 
-            this.udpBypassAddrPortTxb.AutoToolTip = true;
             resources.ApplyResources(this.udpBypassAddrPortTxb, "udpBypassAddrPortTxb");
+            this.udpBypassAddrPortTxb.AutoToolTip = true;
             this.udpBypassAddrPortTxb.Name = "udpBypassAddrPortTxb";
             this.udpBypassAddrPortTxb.ShortcutsEnabled = false;
             this.udpBypassAddrPortTxb.TextChanged += new System.EventHandler(this.udpBypassAddrPortTxb_TextChanged);
             // 
             // toolStripSeparator20
             // 
-            this.toolStripSeparator20.Name = "toolStripSeparator20";
             resources.ApplyResources(this.toolStripSeparator20, "toolStripSeparator20");
+            this.toolStripSeparator20.Name = "toolStripSeparator20";
             // 
             // MainForm
             // 
@@ -858,6 +866,7 @@
         private System.Windows.Forms.ToolStripMenuItem utilsTrackUtilsMedianBtn;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator26;
         private System.Windows.Forms.ToolStripMenuItem utilsTrackUtilsShiftByXYBtn;
+        private System.Windows.Forms.ToolStripMenuItem rwltGIBSettingsEditorBtn;
     }
 }
 

@@ -68,6 +68,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\Specific\BuoyConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Specific\BuoyConfig.Designer.cs">
+      <DependentUpon>BuoyConfig.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Num2Dialog.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,17 +83,27 @@
     <Compile Include="Controls\NumDialog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Controls\NumDialog.Designer.cs" />
+    <Compile Include="Controls\NumDialog.Designer.cs">
+      <DependentUpon>NumDialog.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\SelectLocationDialog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Controls\SelectLocationDialog.Designer.cs" />
+    <Compile Include="Controls\SelectLocationDialog.Designer.cs">
+      <DependentUpon>SelectLocationDialog.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\SettingsEditor.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Controls\SettingsEditor.Designer.cs">
       <DependentUpon>SettingsEditor.cs</DependentUpon>
     </Compile>
+    <Compile Include="LocalisedStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LocalisedStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="uNavCore\rwltGIBPort.cs" />
     <Compile Include="Controls\TextViewDialog.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,18 +125,48 @@
     <Compile Include="uNavCore\uNavPort.cs" />
     <Compile Include="usContainer.cs" />
     <Compile Include="uNavUtils.cs" />
+    <EmbeddedResource Include="Controls\Num2Dialog.ru.resx">
+      <DependentUpon>Num2Dialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SettingsEditor.ru.resx">
+      <DependentUpon>SettingsEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Specific\BuoyConfig.resx">
+      <DependentUpon>BuoyConfig.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\Num2Dialog.resx">
       <DependentUpon>Num2Dialog.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Controls\NumDialog.resx" />
-    <EmbeddedResource Include="Controls\SelectLocationDialog.resx" />
+    <EmbeddedResource Include="Controls\NumDialog.resx">
+      <DependentUpon>NumDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SelectLocationDialog.resx">
+      <DependentUpon>SelectLocationDialog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\SettingsEditor.resx">
       <DependentUpon>SettingsEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Specific\BuoyConfig.ru.resx">
+      <DependentUpon>BuoyConfig.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\TextViewDialog.resx">
       <DependentUpon>TextViewDialog.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TextViewDialog.ru.resx">
+      <DependentUpon>TextViewDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalisedStrings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LocalisedStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalisedStrings.ru-RU.resx" />
+    <EmbeddedResource Include="MainForm.en.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.ru.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

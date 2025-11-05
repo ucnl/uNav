@@ -16,6 +16,7 @@ using UCNLNav.TrackFilters;
 using UCNLUI;
 using UCNLUI.Dialogs;
 using uNav.Controls;
+using uNav.Controls.Specific;
 using uNav.uNavCore;
 using uOSM;
 
@@ -427,10 +428,14 @@ namespace uNav
                     {
                         settingsBtn.Enabled = true;
                         linkBtn.Enabled = true;
-                        logPlaybackBtn.Text = "▶ Playback...";
+                        logPlaybackBtn.Text = string.Format("▶ {0}", LocalisedStrings.MainForm_Playback);
                         MessageBox.Show(
-                            string.Format("Log-file \"{0}\" playback is finished.", lPlayer.LogFileName),
-                            "Information",
+                            string.Format("{0} \"{1}\" {2}", 
+                            LocalisedStrings.MainForm_LogFile, 
+                            lPlayer.LogFileName, LocalisedStrings.MainForm_PlaybackIsFinished),
+                            string.Format("{0} {1} - {2}",
+                            appicon,
+                            Application.ProductName, LocalisedStrings.MainForm_Information),
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Information);
                     });
@@ -439,12 +444,16 @@ namespace uNav
                 {
                     settingsBtn.Enabled = true;
                     linkBtn.Enabled = true;
-                    logPlaybackBtn.Text = "▶ Playback...";
+                    logPlaybackBtn.Text = string.Format("▶ {0}", LocalisedStrings.MainForm_Playback);
                     MessageBox.Show(
-                        string.Format("Log-file \"{0}\" playback is finished.", lPlayer.LogFileName),
-                        "Information",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Information);
+                         string.Format("{0} \"{1}\" {2}",
+                         LocalisedStrings.MainForm_LogFile,
+                         lPlayer.LogFileName, LocalisedStrings.MainForm_PlaybackIsFinished),
+                         string.Format("{0} {1} - {2}",
+                         appicon,
+                         Application.ProductName, LocalisedStrings.MainForm_Information),
+                         MessageBoxButtons.OK,
+                         MessageBoxIcon.Information);
                 }
             };
 
@@ -583,9 +592,9 @@ namespace uNav
             uBase.StatHelperActiveChanged += (o, e) =>
             {
                 if (uBase.StatHelperActive)
-                    InvokeSetText(secondaryToolStrip, statStartStopBtn, "⏹ Stop");
+                    InvokeSetText(secondaryToolStrip, statStartStopBtn, string.Format("⏹ {0}", LocalisedStrings.MainForm_Stop));
                 else
-                    InvokeSetText(secondaryToolStrip, statStartStopBtn, "⏺ Start");
+                    InvokeSetText(secondaryToolStrip, statStartStopBtn, string.Format("⏺ {0}", LocalisedStrings.MainForm_Start));
 
                 InvokeSetCheckedState(secondaryToolStrip, statStartStopBtn, uBase.StatHelperActive);
             };
@@ -627,6 +636,7 @@ namespace uNav
                 sEditor.Text = string.Format("{0} {1} - Settings editor",
                     appicon, Application.ProductName);
                 sEditor.Value = sProvider.Data;
+                sEditor.SpecControlsEnalbed = sProvider.Data.SpecControlsEnabled;
 
                 if (sEditor.ShowDialog() == DialogResult.OK)
                 {
@@ -646,8 +656,8 @@ namespace uNav
 
             if (isSaved &&
                 MessageBox.Show("Settings has been updated, restart application to apply new settings?",
-                string.Format("{0} {1} - Question",
-                appicon, Application.ProductName),
+                string.Format("{0} {1} - {2}",
+                appicon, Application.ProductName, LocalisedStrings.MainForm_Question),
                 MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
             {
                 isRestart = true;
@@ -674,8 +684,8 @@ namespace uNav
             if (lPlayer.IsRunning)
             {
                 if (MessageBox.Show("log is currently playing, abort?",
-                    string.Format("{0} {1} - Question",
-                    appicon, Application.ProductName),
+                    string.Format("{0} {1} - {2}",
+                    appicon, Application.ProductName, LocalisedStrings.MainForm_Question),
                     MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     lPlayer.RequestToStop();
             }
@@ -703,18 +713,18 @@ namespace uNav
         private void logClearEmptyEntriesBtn_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("All log files less than 2 kb will be deleted, Ok?",
-                string.Format("{0} {1} - Question",
+                string.Format("{0} {1} - {2}",
                 appicon,
-                Application.ProductName),
+                Application.ProductName, LocalisedStrings.MainForm_Question),
                 MessageBoxButtons.OKCancel,
                 MessageBoxIcon.Question) == DialogResult.OK)
             {
                 var fNum = RemoveEmptyEntries(logPath, logger.FileName, 2048);
 
                 MessageBox.Show(string.Format("{0} {1}", fNum, "files was/were deleted"),
-                    string.Format("{0} {1} - Information",
+                    string.Format("{0} {1} - {2}",
                     appicon,
-                    Application.ProductName),
+                    Application.ProductName, LocalisedStrings.MainForm_Information),
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
             }
@@ -749,8 +759,8 @@ namespace uNav
         private void logDeleteAllEntriesBtn_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Delete all log files (action cannot be undone)?",
-                                string.Format("{0} {1} - Warning",
-                                appicon, Application.ProductName),
+                                string.Format("{0} {1} - {2}",
+                                appicon, Application.ProductName, LocalisedStrings.MainForm_Warning),
 
                                 MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning) == System.Windows.Forms.DialogResult.Yes)
             {
@@ -759,8 +769,8 @@ namespace uNav
 
                 MessageBox.Show(string.Format("{0} {1}",
                     dirNum, "entries was/were deleted"),
-                    string.Format("{0} {1} - Information",
-                    appicon, Application.ProductName),
+                    string.Format("{0} {1} - {2}",
+                    appicon, Application.ProductName, LocalisedStrings.MainForm_Information),
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
             }
@@ -769,8 +779,8 @@ namespace uNav
         private void logDoThemAllBtn_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Move all log files to an archive?",
-                               string.Format("{0} {1} - Warning",
-                               appicon, Application.ProductName),
+                               string.Format("{0} {1} - {2}",
+                                appicon, Application.ProductName, LocalisedStrings.MainForm_Warning),
                                MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning) == System.Windows.Forms.DialogResult.Yes)
             {
                 RemoveEmptyEntries(logPath, logFileName, 2048);
@@ -779,7 +789,8 @@ namespace uNav
                 using (SaveFileDialog sDialog = new SaveFileDialog())
                 {
                     sDialog.Title = string.Format("{0} {1}",
-                        appicon, "Select a name of archive to compress all log files to");
+                        appicon, 
+                        "Select a name of archive to compress all log files to");
                     sDialog.Filter = "Zip-archives (*.zip)|*.zip";
                     sDialog.DefaultExt = "zip";
                     sDialog.FileName = string.Format("LOG_Archive_{0}", StrUtils.GetYMDString());
@@ -804,8 +815,8 @@ namespace uNav
                 if (!archived)
                 {
                     MessageBox.Show("Some errors occured moving log files to an archive. The archive was not created.",
-                        string.Format("{0} {1} - Error",
-                        appicon, Application.ProductName),
+                        string.Format("{0} {1} - {2}",
+                        appicon, Application.ProductName, LocalisedStrings.MainForm_Error),
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Error);
                 }
@@ -825,8 +836,7 @@ namespace uNav
             bool saved = false;
             using (SaveFileDialog sDialog = new SaveFileDialog())
             {
-                sDialog.Title = string.Format("{0} {1}",
-                    appicon, "Exporting tracks...");
+                sDialog.Title = string.Format("{0} {1}", appicon, LocalisedStrings.MainForm_ExportingTracks);
                 sDialog.Filter = "KML (*.kml)|*.kml|CSV (*.csv)|*.csv";
                 sDialog.FileName = StrUtils.GetHMSString();
 
@@ -848,7 +858,7 @@ namespace uNav
                         }
 
                         StatusHintLinkUpdate(string.Format("{0} {1}",
-                           "All tracks were saved to", Path.GetFileName(sDialog.FileName)), sDialog.FileName);
+                           LocalisedStrings.MainForm_AllTracksWereSavedTo, Path.GetFileName(sDialog.FileName)), sDialog.FileName);
 
                     }
                     catch (Exception ex)
@@ -860,8 +870,8 @@ namespace uNav
 
             if (saved)
             {
-                if (MessageBox.Show("Tracks saved. Clear all tracks data?",
-                    string.Format("{0} {1} - Question", appicon, Application.ProductName),
+                if (MessageBox.Show(string.Format("{0} {1}", LocalisedStrings.MainForm_TracksSuccessfullySaved, LocalisedStrings.MainForm_ClearAllTracksDataPrompt),
+                    string.Format("{0} {1} - {2}", appicon, Application.ProductName, LocalisedStrings.MainForm_Question),
                     MessageBoxButtons.YesNo,
                     MessageBoxIcon.Question) == DialogResult.Yes)
                     tManager.Clear();
@@ -871,8 +881,8 @@ namespace uNav
 
         private void tracksClearAllBtn_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Clear all tracks data?",
-                string.Format("{0} {1} - Question", appicon, Application.ProductName),
+            if (MessageBox.Show(LocalisedStrings.MainForm_ClearAllTracksDataPrompt,
+                string.Format("{0} {1} - {2}", appicon, Application.ProductName, LocalisedStrings.MainForm_Question),
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Question) == DialogResult.Yes)
                 tManager.Clear();
@@ -884,8 +894,8 @@ namespace uNav
         {
             using (NumDialog nDialog = new NumDialog())
             {
-                nDialog.Text = "Moving average smoothing...";
-                nDialog.ValueCaption = "Window size";
+                nDialog.Text = LocalisedStrings.MainForm_MovingAverageSmoothing;
+                nDialog.ValueCaption = LocalisedStrings.MainForm_WindowSize;
                 nDialog.MaxValue = 64;
                 nDialog.MinValue = 2;
                 nDialog.Value = 4;
@@ -895,7 +905,7 @@ namespace uNav
                 {
                     using (OpenFileDialog oDialog = new OpenFileDialog())
                     {
-                        oDialog.Title = "Select a tracks to filter...";
+                        oDialog.Title = LocalisedStrings.MainForm_SelectATrackToFilter;
                         oDialog.Multiselect = false;
                         oDialog.Filter = "KML-files|*.kml";
 
@@ -939,7 +949,7 @@ namespace uNav
 
                                 using (SaveFileDialog sDialog = new SaveFileDialog())
                                 {
-                                    sDialog.Title = "Select filename to save filtered track...";
+                                    sDialog.Title = LocalisedStrings.MainForm_SelectFilenameToSaveFilteredTrack;
                                     sDialog.DefaultExt = "kml";
                                     sDialog.Filter = "KML files (*.kml)|*.kml";
 
@@ -962,7 +972,10 @@ namespace uNav
                                         }
 
                                         if (isSaved)
-                                            MessageBox.Show("Tracks successfully saved.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                            MessageBox.Show(LocalisedStrings.MainForm_TracksSuccessfullySaved,
+                                                string.Format("{0} {1} - {2}",
+                                                appicon, Application.ProductName, LocalisedStrings.MainForm_Information),
+                                                MessageBoxButtons.OK, MessageBoxIcon.Information);
                                     }
                                 }
                             }
@@ -976,8 +989,8 @@ namespace uNav
         {
             using (NumDialog nDialog = new NumDialog())
             {
-                nDialog.Text = "Median smoothing...";
-                nDialog.ValueCaption = "Window size";
+                nDialog.Text = LocalisedStrings.MainFrom_MedianSmoothing;
+                nDialog.ValueCaption = LocalisedStrings.MainForm_WindowSize;
                 nDialog.MaxValue = 21;
                 nDialog.MinValue = 3;
                 nDialog.Value = 5;
@@ -991,7 +1004,7 @@ namespace uNav
 
                     using (OpenFileDialog oDialog = new OpenFileDialog())
                     {
-                        oDialog.Title = "Select a tracks to filter...";
+                        oDialog.Title = LocalisedStrings.MainForm_SelectATrackToFilter;
                         oDialog.Multiselect = false;
                         oDialog.Filter = "KML-files|*.kml";
 
@@ -1035,7 +1048,7 @@ namespace uNav
 
                                 using (SaveFileDialog sDialog = new SaveFileDialog())
                                 {
-                                    sDialog.Title = "Select filename to save filtered track...";
+                                    sDialog.Title = LocalisedStrings.MainForm_SelectFilenameToSaveFilteredTrack;
                                     sDialog.DefaultExt = "kml";
                                     sDialog.Filter = "KML files (*.kml)|*.kml";
 
@@ -1058,7 +1071,9 @@ namespace uNav
                                         }
 
                                         if (isSaved)
-                                            MessageBox.Show("Tracks successfully saved.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                            MessageBox.Show(LocalisedStrings.MainForm_TracksSuccessfullySaved, 
+                                                string.Format("{0} {1} - {2}",
+                                                appicon, Application.ProductName, LocalisedStrings.MainForm_Information), MessageBoxButtons.OK, MessageBoxIcon.Information);
                                     }
                                 }
                             }
@@ -1072,14 +1087,14 @@ namespace uNav
         {
             using (Num2Dialog nDialog = new Num2Dialog())
             {
-                nDialog.Text = "Track offset...";
-                nDialog.Value1Caption = "X offset (Longitude), m";
+                nDialog.Text = LocalisedStrings.MainForm_TrackOffset;
+                nDialog.Value1Caption = LocalisedStrings.MainForm_XOffset_Longitude_m;
                 nDialog.Value1MaxValue = 999;
                 nDialog.Value1MinValue = -999;
                 nDialog.Value1 = 0;
                 nDialog.Value1DecimalPlaces = 1;
 
-                nDialog.Value2Caption = "Y offset (Latitude), m";
+                nDialog.Value2Caption = LocalisedStrings.MainForm_YOffset_Latitude_m;
                 nDialog.Value2MaxValue = 999;
                 nDialog.Value2MinValue = -999;
                 nDialog.Value2 = 0;
@@ -1089,7 +1104,7 @@ namespace uNav
                 {
                     using (OpenFileDialog oDialog = new OpenFileDialog())
                     {
-                        oDialog.Title = "Select a tracks to filter...";
+                        oDialog.Title = LocalisedStrings.MainForm_SelectATrackToFilter;
                         oDialog.Multiselect = false;
                         oDialog.Filter = "KML-files|*.kml";
 
@@ -1134,7 +1149,7 @@ namespace uNav
 
                                 using (SaveFileDialog sDialog = new SaveFileDialog())
                                 {
-                                    sDialog.Title = "Select filename to save filtered track...";
+                                    sDialog.Title = LocalisedStrings.MainForm_SelectFilenameToSaveFilteredTrack;
                                     sDialog.DefaultExt = "kml";
                                     sDialog.Filter = "KML files (*.kml)|*.kml";
 
@@ -1157,7 +1172,10 @@ namespace uNav
                                         }
 
                                         if (isSaved)
-                                            MessageBox.Show("Tracks successfully saved.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                            MessageBox.Show(LocalisedStrings.MainForm_TracksSuccessfullySaved,
+                                               string.Format("{0} {1} - {2}",
+                                               appicon, Application.ProductName, LocalisedStrings.MainForm_Information), 
+                                               MessageBoxButtons.OK, MessageBoxIcon.Information);
                                     }
                                 }
                             }
@@ -1166,7 +1184,6 @@ namespace uNav
                 }
             }
         }
-
 
         #endregion
 
@@ -1231,8 +1248,8 @@ namespace uNav
 
         private void clearViewBtn_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Clear current plot? This action will not change the tracks.",
-                string.Format("{0} {1} - Question", appicon, Application.ProductName),
+            if (MessageBox.Show(LocalisedStrings.MainForm_ClearCurrentPlotPrompt,
+                string.Format("{0} {1} - {2}", appicon, Application.ProductName, LocalisedStrings.MainForm_Question),
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Question) == DialogResult.Yes)
             {
@@ -1268,7 +1285,7 @@ namespace uNav
                 {
                     using (SelectLocationDialog sDialog = new SelectLocationDialog())
                     {
-                        sDialog.Text = "Specify a point to use as a reference";
+                        sDialog.Text = LocalisedStrings.MainForm_SpecifyAPointToUseAsAReference;
                         sDialog.SetPoints(tManager.GetTrack2D(uNavCore.uNav.MarkedPointsTrackID));
 
                         var currentLocation = uBase.GetCurrentTargetLocation();
@@ -1317,10 +1334,10 @@ namespace uNav
         {
             using (NumDialog nDialog = new NumDialog())
             {
-                nDialog.Text = string.Format("{0} {1} - Override target depth...",
-                   appicon, Application.ProductName);
+                nDialog.Text = string.Format("{0} {1} - {2}",
+                   appicon, Application.ProductName, LocalisedStrings.MainForm_OverrideTargetDepth);
                 nDialog.DecimalPlaces = 1;
-                nDialog.ValueCaption = "Target depth, m";
+                nDialog.ValueCaption = LocalisedStrings.MainForm_TargetDepthM;
                 nDialog.MaxValue = 1000;
                 nDialog.MinValue = 0;
                 nDialog.Value = 0;
@@ -1343,10 +1360,10 @@ namespace uNav
         {
             using (NumDialog nDialog = new NumDialog())
             {
-                nDialog.Text = nDialog.Text = string.Format("{0} {1} - Override water temperature...",
-                   appicon, Application.ProductName);
+                nDialog.Text = nDialog.Text = string.Format("{0} {1} - {2}",
+                   appicon, Application.ProductName, LocalisedStrings.MainForm_OverrideWaterTemperature);
                 nDialog.DecimalPlaces = 1;
-                nDialog.ValueCaption = "Water temperature, °C";
+                nDialog.ValueCaption = string.Format("{0}, °C", LocalisedStrings.MainForm_WaterTemperature); ;
                 nDialog.MaxValue = 46;
                 nDialog.MinValue = -4;
                 nDialog.Value = 17;
@@ -1466,8 +1483,8 @@ namespace uNav
             if (!autoscreenshotEnabled)
             {
                 if (MessageBox.Show(
-                    "Enable automatic scneen shot every 1 second? Frames will be saved to AUTOSNAPSHOTS folder",
-                    string.Format("{0} {1} - Question", appicon, Application.ProductName),
+                    LocalisedStrings.MainForm_EnableAutomaticScreenShotEvery1SecondQuestion,
+                    string.Format("{0} {1} - {2}", appicon, Application.ProductName, LocalisedStrings.MainForm_Question),
                     MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
                 {
                     autoscreenshotEnabled = true;
@@ -1477,8 +1494,12 @@ namespace uNav
             else
             {
                 if (MessageBox.Show(
-                    string.Format("Stop automatic scneen shot every 1 second? {0} Frames are saved to {1}", autoscreenshot_idx, autoscreenshots_path),
-                    string.Format("{0} {1} - Question", appicon, Application.ProductName),
+                    string.Format("{0} {1} {2} {3}",
+                    LocalisedStrings.MainForm_StopAutomaticScreenshotEvery1SecondQuestion,
+                    autoscreenshot_idx,
+                    LocalisedStrings.MainForm_FramesAreSavedTo,
+                    autoscreenshots_path),
+                    string.Format("{0} {1} - {2}", appicon, Application.ProductName, LocalisedStrings.MainForm_Question),
                     MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
                 {
                     autoscreenshotEnabled = false;
@@ -1519,8 +1540,8 @@ namespace uNav
                 DialogResult dResult = DialogResult.Yes;
                 while (tManager.Changed && (dResult == DialogResult.Yes))
                 {
-                    dResult = MessageBox.Show("Save tracks before exit?",
-                    string.Format("{0} {1} - Question", appicon, Application.ProductName),
+                    dResult = MessageBox.Show(LocalisedStrings.MainForm_TracksSavePrompt,
+                    string.Format("{0} {1} - {2}", appicon, Application.ProductName, LocalisedStrings.MainForm_Question),
                     isRestart ? MessageBoxButtons.YesNo : MessageBoxButtons.YesNoCancel,
                     MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
 
@@ -1534,8 +1555,8 @@ namespace uNav
             else
             {
                 e.Cancel = !isRestart &&
-                    (MessageBox.Show("Close application?",
-                    string.Format("{0} {1} - Question", appicon, Application.ProductName),
+                    (MessageBox.Show(LocalisedStrings.MainForm_ApplicationClosePrompt,
+                    string.Format("{0} {1} - {2}", appicon, Application.ProductName, LocalisedStrings.MainForm_Question),
                     MessageBoxButtons.YesNo,
                     MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) != DialogResult.Yes);
             }
@@ -1701,7 +1722,7 @@ namespace uNav
                 var path = Path.Combine(snapshotsPath, fName);
                 target.Save(path, ImageFormat.Png);
 
-                return string.Format("{0} {1}|{2}", "Screenshot saved to", fName, path);
+                return string.Format("{0} {1}|{2}", LocalisedStrings.MainForm_ScreenshotSavedTo, fName, path);
             }
             catch (Exception ex)
             {
@@ -1991,9 +2012,17 @@ namespace uNav
 
             if (isMsgBox)
                 MessageBox.Show(ex.Message,
-                    string.Format("{0} {1} - Error", appicon, Application.ProductName),
+                    string.Format("{0} {1} - {2}", appicon, Application.ProductName, LocalisedStrings.MainForm_Error),
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
-        }        
+        }
+
+        private void rwltGIBSettingsEditorBtn_Click(object sender, EventArgs e)
+        {
+            using (BuoyConfig bDialog = new BuoyConfig())
+            {
+                bDialog.ShowDialog();
+            }
+        }
 
         private void deviceInfoViewBtn_Click(object sender, EventArgs e)
         {
@@ -2006,8 +2035,7 @@ namespace uNav
                     uBase.DeviceInfo, uBase.DeviceSerialNumber);
 
                 tDialog.TextContent = sb.ToString();
-                tDialog.Text = string.Format("{0} {1} - Device information",
-                   appicon, Application.ProductName);
+                tDialog.Text = string.Format("{0} {1} - {2}", appicon, Application.ProductName, LocalisedStrings.MainForm_DeviceInformation);
 
                 tDialog.EditorEnabled = false;
                 tDialog.ShowDialog();

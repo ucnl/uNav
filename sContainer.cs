@@ -36,6 +36,8 @@ namespace uNav
 
         public bool EnableTilesDownloading;
 
+        public bool SpecControlsEnabled;
+
         #endregion
 
         #region Methods
@@ -76,6 +78,7 @@ namespace uNav
             };
 
             EnableTilesDownloading = false;
+            SpecControlsEnabled = false;
         }
 
         #endregion
