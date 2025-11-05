@@ -159,6 +159,7 @@ namespace uNav.uNavCore
                 }
             };
             uPort.IsActiveChanged += (o, e) => IsActiveChanged.Rise(this, e);
+
             uPort.RawDataReceived += (o, e) =>
             {
                 if (SerialBypassActive)
@@ -325,6 +326,10 @@ namespace uNav.uNavCore
                 if (splits[1] == "(uNav)")
                 {
                     uPort.EmulateInput(splits[2]);
+
+                    if (UDPOutputEnabled)
+                        udpOutput.Send(splits[2]);
+
                 }
             }
         }

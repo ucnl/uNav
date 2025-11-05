@@ -49,24 +49,24 @@ namespace uNav.uNavCore
 
     #endregion
 
-    #region Constructor
+        #region Constructor
 
-    public DeviceSettingsReceivedEventArgs(double sty_psu, double wtmp_c, double sos_mps, double max_tsps_mps,
-            int sf_FIFO_size, double sf_rthld_m, int dhf_FIFO_size, double dhf_rthld_m, int ce_FIFO_size, int int_brate, int rwlt_mode, int rwlt_drating)
-        {
-            Sty_PSU = sty_psu;
-            Wtmp_C = wtmp_c; 
-            Sos_mps = sos_mps;
-            Max_tsps_mps = max_tsps_mps;
-            Sf_FIFO_size = sf_FIFO_size;
-            Sf_rthld_m = sf_rthld_m;
-            Dhf_FIFO_size = dhf_FIFO_size;
-            Dhf_rthld_m = dhf_rthld_m;
-            Ce_FIFO_size = ce_FIFO_size;
-            Int_brate = int_brate;
-            RWLT_Mode = rwlt_mode;
-            RWLT_DRating = rwlt_drating;
-    }
+        public DeviceSettingsReceivedEventArgs(double sty_psu, double wtmp_c, double sos_mps, double max_tsps_mps,
+                int sf_FIFO_size, double sf_rthld_m, int dhf_FIFO_size, double dhf_rthld_m, int ce_FIFO_size, int int_brate, int rwlt_mode, int rwlt_drating)
+            {
+                Sty_PSU = sty_psu;
+                Wtmp_C = wtmp_c; 
+                Sos_mps = sos_mps;
+                Max_tsps_mps = max_tsps_mps;
+                Sf_FIFO_size = sf_FIFO_size;
+                Sf_rthld_m = sf_rthld_m;
+                Dhf_FIFO_size = dhf_FIFO_size;
+                Dhf_rthld_m = dhf_rthld_m;
+                Ce_FIFO_size = ce_FIFO_size;
+                Int_brate = int_brate;
+                RWLT_Mode = rwlt_mode;
+                RWLT_DRating = rwlt_drating;
+        }
 
 
         #endregion
@@ -367,7 +367,7 @@ namespace uNav.uNavCore
         {
             base.PortDescription = "uNav";
             base.IsLogIncoming = true;
-            base.IsTryAlways = true;
+            base.IsTryAlways = true;            
 
             if (!nmeaSingleton)
             {
@@ -400,7 +400,7 @@ namespace uNav.uNavCore
                 NMEAParser.AddProprietarySentenceDescription(ManufacturerCodes.UNV, "6", "x,x.x");
 
                 nmeaSingleton = true;
-            }
+            }            
         }
 
         #endregion
